@@ -1,0 +1,130 @@
+.ligero{
+    font-weight: lighter;
+    /* color rojo  */
+    color: red;
+}
+
+.normal{
+    font-weight: normal;
+    /* color azul */
+    color: #0000ff;
+}
+
+.negrita{
+    font-weight: bold;
+    /* color verde  */
+    color: rgb(0,128,0);
+}
+
+.pesado{
+    font-weight:bolder ;
+    color: yellow;
+}
+
+.v_400{
+    font-weight: 400;
+}
+
+.v_600{
+    font-weight: 600;
+    color: rgb(184, 134, 13);
+}
+
+.f_normal{
+    font-variant: normal;
+    color: #FFFF00;
+}
+
+.f_small{
+    font-variant: small-caps;
+    color: blue;
+}
+
+/* Alineacion vertical  */
+
+.top{
+    vertical-align: top;
+}
+
+.mid{
+    vertical-align: middle;
+}
+
+.bot{
+    vertical-align: bottom;  
+}
+
+.table{
+    border: 1 solid;
+    height: 200px;
+}
+
+/* superindices  */
+.baseline{
+    vertical-align: baseline;
+}
+
+.sub{
+    vertical-align: sub;
+}
+
+.super{
+    vertical-align: super;
+}
+
+.pix{
+    vertical-align: -30px;
+}
+
+.bloque{
+    height: 200px;
+    width: 300px;
+    background-color: red;
+    display: inline-table;
+}
+
+.text{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Estilos de texto decoracion  */
+.none{
+    text-decoration: none;
+}
+
+.inherit{
+    text-decoration: inherit;
+}
+
+.overline{
+    text-decoration: overline;
+}
+
+.through{
+    text-decoration: line-through;
+}
+
+.underline{
+    text-decoration: underline;
+}
+.dec_multiple{
+    text-decoration: underline,overline,line-through;
+}
+
+/* textos con sombra  */
+.sombra_positivo{
+    /* primer valor: distancia horizontal
+    Segundo valor: Distancia vertical
+    Tercer valor: Desenfoque
+    cuarto valor: Color  */
+    text-shadow: 7px 4px 5px rgb(107, 107, 126);
+}
+
+.sombra_negativo{
+    /* primer valor: distancia horizontal
+    Segundo valor: Distancia vertical
+    Tercer valor: Desenfoque
+    cuarto valor: Color  */
+    text-shadow: -7px -4px 5px rgb(107, 107, 126);
+}

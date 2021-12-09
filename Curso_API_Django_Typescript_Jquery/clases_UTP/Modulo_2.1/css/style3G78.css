@@ -1,0 +1,169 @@
+/* Para modificar los estilos de una clase se coloca punto (.)
+para modificar los estilos de un id se coloca almohadilla o numeral  */
+/* Clase * son estilos que se van a aplicar a todos los elementos  */
+*{
+    margin:0px;
+    padding:0px;
+    /* list-style:none; */
+}
+
+.clearfix{
+    float:none;
+    /* both limpia los flotadores  */
+    clear:both;
+}
+
+/* seccion pagina global */
+/* El id global abarca la cabecera header y el body. Coloca sus elementos centrados en este caso*/ */
+#global{
+    width:65%;
+    margin:0px auto;
+    margin-top:30px;
+    padding: 25px;
+    background:white;
+    box-shadow: 0px 0px 2px gray; /*Sombra de la seccion global en gris*/
+}
+
+/* Logotipo header  */
+#logo{
+    font-family:Verdana,Arial;
+    font-size:28px;
+    letter-spacing:4px;
+    line-height: 75px;
+    /* background:#235E3D;  */ /*Va a ser seleccionado en los css de los temas*/
+    color:white;
+    text-align:center;
+    width:385px;
+    height:80px;
+    margin-bottom:20px;
+    float:left;
+}
+
+#menu{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#3477B6;
+    width: 100%;
+    text-transform: uppercase; /*Texto en mayuscula*/
+    margin-bottom: 20px;
+}
+
+
+#menu ul{
+    line-height: 46px;
+    list-style: none; /*A la lista quitar los puntos que aparecen*/
+}
+
+#menu ul li{
+    height: 50px;
+    /* quiero colocar el menu horizontal debo utilizar el atributo display:inset-block: ; */
+    display: inline-block;
+    transition: all 300ms;/*Permite que haya una transiccion sobre el link del menu*/
+}
+
+#menu a{
+    display: block;
+    color:black;
+    /* text-decoration: none; me quita el subrayado del enlace   */
+    text-decoration: none; 
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.parrafo{
+    font-size: 30px;
+    text-align: justify;
+    width: 100%;
+}
+
+/* Si queremos modificar una etiqueta, solamente basta con colocar el nombre de la etiqueta */
+footer{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    height: 47px;
+    background-color: #3477B6;
+    margin: 0px auto; /*con el atributo margin centramos el footer en la pagina web*/
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top:auto;
+    line-height: 47px;
+}
+
+.subir{
+    color:black;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
+table{
+    width: 50%;
+    margin: 0px auto;
+}
+
+table th, tr{
+    /* border: 1px solid black; */
+    border: 1;
+    /* background-color: snow; */
+    /* border-collapse: collapse; */
+    text-align: center;
+}
+
+.colg1 {
+    background-color: lawngreen;
+}
+
+.colg2{
+    background-color: lightcoral;
+}
+
+
+.box{
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: 20px;
+}
+.dashed{
+    border: 3px dashed black;
+    /* separa los bordes  */
+    padding: 5px;
+}
+
+
+/* #Formularios  */
+form button,
+form input[type="submit"],
+form input[type='reset']{
+    display: block;
+    font-size: 17px;
+    padding: 5px;
+    margin-top: 15px;
+    color:white;
+    background: rgba(53, 103, 164,1);
+    border: 1px solid rgba(13, 67, 133, 1);
+    cursor:pointer;
+}
+
+form button:hover,
+form input[type="reset"]:hover,
+form input[type="submit"]:hover{
+    background: rgba(53, 103, 164,0.8);
+    border: 1px solid rgba(13, 67, 133, 1);
+    /* cursor:pointer; */
+}
+
+/* css del boton enviar cuando esta en modo disabled  */
+form input[disabled]{
+    opacity: 0.4;
+    cursor: not-allowed! important; /*no permitido mientras el formulario no ha sido validado*/
+}
+
+/* Clase form_error cuando el formulario no es validado  */
+.form_error{
+    font-size: 13px;
+    padding: 3px;
+    background: red;
+    color: white;
+    margin-left: 13px;
+}

@@ -1,0 +1,88 @@
+body{
+    background-color: rgb(223, 223, 199);
+    background-image: url('../img/hojas.jpg'),url('../img/minion.jpg'),url('../img/png.jpg');
+    /* background-image: url('../img/minion.jpg'); */
+    background-repeat: repeat-x;
+}
+
+.contenedor{
+    background-color: #abbcff;
+    padding: 40px;
+    /* max-width: 500px; */
+    /* min-height: 150px; */
+    background-image: url('../img/minion.jpg');
+    background-repeat: inherit;
+    border: 2px solid red;
+    width: 450px;
+    height: 300px;
+}
+
+.titulo{
+
+}
+
+p{
+    padding: 20px;
+}
+.morado{
+    background-color: purple;
+}
+
+.verde{
+    background-color: #009846;
+}
+
+.naranja{
+    background-color: rgb(239,127,26);
+}
+
+/* Imagen de fondo  */
+.fondoimg{
+    max-width: 500px;
+    min-height: 350px;
+    background-image: url('../img/minion.jpg'),url('../img/png.jpg');
+}
+
+.ptext{
+    background-color: coral;
+    /* cubrir el texto con el fondo de la imagen  */
+    /* background-image: inherit; */
+}
+
+/* textos con imagen movil y fijo  */
+.movil{
+    background-image: url('../img/minion.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.fijo{
+    background-image: url('../img/minion.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* pre{
+    background-color: #abbcff;
+    background-image: inherit;
+} */
+
+.elemento{
+    /* Funcion calc  */
+    /* width: calc(200px + 1em); */
+    /* funcion min, se permite escoger varias posibilidades  */
+    /* width: min(200px, 25%); */
+    /* Funcion max permite definir el maximo entre varias opciones */
+    /* Relative to 1% of the width of the viewport* */
+    /* Consejo: ¡ Las unidades em y rem son prácticas para crear un diseño perfectamente escalable!
+    * Viewport = el tamaño de la ventana del navegador. Si la ventana tiene 50 cm de ancho, 1 vw = 0,5 cm. */
+    width: max(200px-100px, 25%,14vw);
+    height: 200px;
+    background: blue;
+}
+
+.element::before{
+    content: attr(data-autor);
+    font-size: 22px;
+    color: #444;
+}

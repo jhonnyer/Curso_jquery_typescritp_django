@@ -1,0 +1,110 @@
+.nav-enlace{
+    background: salmon;
+    padding: 10px 30px;
+    color: #FFF;
+    /* convertimos en un bloque en este caso vertical  */
+    display: block;
+    /* utilziar display inline block para colocar los elementos en bloque de forma -ms-text-combine-horizontal;
+    Tambien permite añadir una separcion de margen superior a la pagina web */
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-enlace:hover{
+    background: rosybrown;
+}
+
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+}
+
+/* Manejo de flex  */
+.contenedor{
+    width: 80%;
+    height: 500px;
+    background: #FF5C29;
+    margin: 50px auto;
+    display: flex;
+
+    /* esta propiedad nos permite ordenar los bloques en orden desde el lado izquierdo  */
+    flex-direction: row;
+
+    /* esta propiedad permite ordenar los bloques desde la derecha, primero se empieza en este caso con el bloque A que estaba inicialmente  */
+    /* flex-direction: row-reverse; */
+
+    /* esta propiedad nos permite organizar los bloques de forma vertical  */
+    /* flex-direction: column; */
+
+    /* flex-direction: column-reverse; */
+
+    /* permite mantener el ancho de los elementos de la pagina web, hace que los bloques sean responsive */
+    flex-wrap: wrap;
+
+    /* Permite mantener los bloques inicialmente en su posicion original al lado izquierdo */
+    /* justify-content: flex-start; */
+
+    /* Permite organizar los bloques del lado derecho de mi pagina web, manteniendo el orden  */
+    /* justify-content: flex-end; */
+
+    /* los bloques van a estar centrados en el contenedor padre  */
+    justify-content: center;
+
+    /* Propiedad space-between que permite que los bloques tengan un mayor espacio entre ellos ocupando el ancho del contenedor  */
+    /* justify-content: space-between; */
+
+    /* propiedad space around que permite que los bloques se modifiquen su espacio de seperacion entre ellos de forma aleatoria en el contenedor  */
+    /* justify-content: space-around; */
+
+    /* align-items, permite posicionar los bloques hijos al top, al final o al centro del contenedor de forma vertical  */
+    /* Posicionar los elementos de los bloques en el centro del contenedor verticalmente  */
+    /* align-items: center; */
+
+    /* Colocamos los bloques en la parte superior del contenedor  */
+    /* align-items: flex-start; */
+    /* align-items: baseline; */
+
+    /* alinear los bloques en la parte inferior del contenedor  */
+    /* align-items: flex-end; */
+
+    /* definir la altura automatica de los bloques de los elementos hijo, 
+    permite que flex modifique automaticamente la altura de los contenedores hijo  */
+    align-items: stretch;
+
+}
+
+.hijo{
+    background: greenyellow;
+    padding: 20px;
+    margin: 10px;
+    width: 50px;
+    color: black;
+    /* height: 20px; */
+}
+
+.hijo a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#menu{
+    width: 40%;
+    float: left;
+    background: #FF5C29;
+    margin: 10px;
+    height: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu a{
+    text-decoration: none;
+}
+
+#menu ul{
+    line-height: 46px;
+    list-style: none;
+    padding: 20px;
+}

@@ -1,0 +1,128 @@
+.box-1{
+    width: 100px;
+    height: 100px;
+    background: lime;
+    padding: 50px;
+    margin: 20px;
+}
+
+.box-2{
+    margin: 200px;
+    width: 100px;
+    height: 100px;
+    background: lightcoral;
+}
+
+
+/* estilos cajas inferiores en dos bloques  */
+.box-n{
+    width: 40%;
+    padding: 10px;
+    background: lime;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.box-m{
+    width: 40%;
+    padding: 10px;
+    background: lightcoral;
+    float: right;
+    margin-bottom: 20px;
+}
+
+/* estilos border  */
+[class*=vox]{
+    width: 200px;
+    height: 200px;
+    margin: 2em;
+}
+
+.vox-1{
+    background: yellowgreen;
+    border: 5px solid red;
+    border-top-width: 200px;
+    border-top-color: transparent;
+}
+
+.vox-2{
+    background: lightseagreen;
+    border-left-width: 5px;
+    /* Añade un borde de puntos  */
+    border-left-style: dotted; 
+    border-left-color: blue;
+    border-right-style:ridge;
+}
+
+.vox-3{
+    background: lightcoral;
+    border: 5px dashed blue;
+}
+
+.vbox-4{
+    width: 250px;
+    height: 250px;
+    /* centrado  */
+    margin: 1em auto;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.vbox-4{
+    background: lightgreen;
+    position: relative;
+    top: 50px;
+    right: 200px;
+}
+
+/* Cuadrados  */
+.container{
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    position: relative;
+}
+
+[class^=cox]{
+    width: 50px;
+    height: 50px;
+}
+
+.cox-1{
+    border: 4px solid palevioletred;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cox-2{
+    border: 4px solid blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cox-3{
+    border: 4px solid green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.cox-4{
+    border: 4px solid lightseagreen;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.cox-5{
+    border: 4px solid darkorange;
+    position:absolute;
+    /* margin: 7em; */
+    top: 36%;
+    left: 36%;
+
+}

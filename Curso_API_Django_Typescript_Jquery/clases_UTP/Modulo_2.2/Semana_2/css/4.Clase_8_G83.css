@@ -1,0 +1,137 @@
+body{
+    background: wheat;
+}
+
+/* estilos del menu de navegacion  */
+.nav-enlace{
+    display: inline-block;
+    background: salmon;
+    color: #FFF;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.nav-enlace:hover{
+    background: rosybrown;
+    /* color: blue;    */
+}
+
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.contenedor1{
+    font-size: 32px;
+}
+
+.p1{
+    font-size: 1em;
+}
+
+h1{
+    color: red;
+    font-size: 4rem;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+}
+
+@media (max-width:600px){
+    .contenedor1{
+        display: none;
+    }
+
+    nav{
+        background:black;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-enlace{
+        margin: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    select{
+        display: none;
+    }
+
+    h1{
+        font-size: 30px;
+        text-align: center;
+        color: black;
+    }
+
+    h2{
+        font-size: 25px;
+        text-align: left;
+        color: blue;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+@media (min-width:600px){
+    select{
+        margin: 0px auto;
+        background: burlywood;
+        font-size: 30px;
+    }
+}
+
+
+@media all and (max-width:500px) {
+    body{
+        background: aquamarine;
+    }
+    p{
+        line-height: 1.5;
+        text-align: justify;
+        font-size: 14px;
+    }
+}
+
+
+@media print{
+    body{
+        color: blue;
+    }
+    h1{
+        color: red;
+    }
+}
+
+
+/* Tipo de orientacion vertical 
+ landscape: Permite que la ventana grafica tenga una horientacion horizontal, es decir el ancho es mayor que la altura*/
+  @media (orientation:landscape) and (max-width:500px){
+      h1{
+          color: green;
+      }
+      h2{
+          color: orange;
+      }
+  }
+
+
+  /* Tipo de orientacion vertical 
+  Portrait: La ventana va a tener una orientacion vertical, es decir la altura es mayor que la anchura */
+
+  @media (orientation:portrait){
+      h1{
+          color: chocolate;
+      }
+      body{
+          background: deeppink;
+      }
+  }

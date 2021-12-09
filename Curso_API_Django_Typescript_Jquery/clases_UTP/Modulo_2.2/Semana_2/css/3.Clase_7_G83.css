@@ -1,0 +1,218 @@
+.body{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 10px;
+    height: 100vh;
+    color: #FFF;
+    font-family: sans-serif;
+    background-image: radial-gradient(circle, #B94BF8, #3A1957);
+    background-repeat: no-repeat;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+}
+
+.grid-items{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.hijo_D{
+    background: orange;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.hijo_H{
+    background: violet;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.hijo_I{
+    background: red;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.hijo_C{
+    background: orange;
+}
+
+.hijo_A,
+.hijo_B,
+.hijo_E,
+.hijo_F,
+.hijo_G{
+    background: violet;
+}
+
+
+
+/* vamos a generar los estilos para un template area  */
+.grid-container1{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-template-areas:
+    "hijoA hijoA hijoA hijoA"
+    "hijoB . . hijoC"
+    "hijoB hijoD hijoD hijoE"
+    "hijoF hijoH hijoG hijoI";
+
+}
+
+/* configurar los elementos hijos del contenedor 1  */
+.hijo_Aa{
+    background: violet;
+    grid-area: hijoA;
+}
+
+.hijo_Bb{
+    background: violet;
+    grid-area: hijoB;
+}
+
+.hijo_Cc{
+    background: orange;
+    grid-area: hijoC
+}
+
+.hijo_Dd{
+    background: orange;
+    grid-area:hijoD
+}
+
+.hijo_Ee{
+    background: violet;
+    grid-area: hijoE;
+}
+
+
+.hijo_Ff{
+    background: violet;
+    grid-area: hijoF;
+}
+
+.hijo_Gg{
+    background: violet;
+    grid-area: hijoG;
+}
+
+.hijo_Hh{
+    background: violet;
+    grid-area: hijoH;
+}
+
+.hijo_Ii{
+    background: red;
+    grid-area: hijoI;
+}
+
+/* contenedor de textos  */
+.price{
+    display: flex;
+    align-items: flex-start;
+    min-height: 700px;
+    border: 1px solid black;
+    background: skyblue;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.price-item{
+    width: 40%;
+    min-width: 300px;
+    height: 400px;
+    padding: 5px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.price-item:first-child{
+    background: peru;
+}
+
+.price-item:nth-child(2){
+    background: yellowgreen;
+}
+
+.price-item:nth-child(3){
+    background: indianred;
+}
+
+.price-item:nth-child(4){
+    background: lightgrey;
+}
+
+.price-item video{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contenedor2{
+    /* display: flex; */
+    align-items: flex-start;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(7, 100px);
+    grid-template-rows: repeat(7,100px);
+}
+
+.grid-item{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+
+.grid-item img{
+    max-width: 100%;
+}
+
+.otro1{
+    background: #B94BF8;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.otro2{
+    background: #3A1957;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.otro3{
+    background: #3A1957;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+
+.otro4{
+    background: #3A1957;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 7;
+}

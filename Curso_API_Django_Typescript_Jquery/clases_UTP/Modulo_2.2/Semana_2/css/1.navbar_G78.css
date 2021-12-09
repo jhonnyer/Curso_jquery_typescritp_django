@@ -1,0 +1,115 @@
+.nav-enlace{
+    background: salmon;
+    color: #FFF;
+    padding: 10px 30px;
+    display: block;
+    /* Nos permite mantener la posicion de los bloques de los elementos a y  colcoar los elementos de forma horizontal  */
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-enlace:hover{
+    background: rosybrown;
+}
+
+
+.contenedor{
+    width: 80%;
+    height: 500px;
+    background: #FF5C29;
+    margin: 50px auto;
+    display: flex;
+
+    /* Permite posicionar los bloques en orden desde el lado izquierdo  */
+    flex-direction: row;
+
+    /* Permite posicionar los elementos en orden desde el lado derecho  */
+    /* flex-direction: row-reverse; */
+
+    /* Permite organizar los bloques de forma vertical uno despues de otro  en orden desde arriba hacia abajo */
+    /* flex-direction:column; */
+    
+    /* Permite organizar los bloques verticalmente en orden desde abajo hacia arriba  */
+    /* flex-direction: column-reverse; */
+
+    /* Vmos a hacer la pagina web responsive  */
+    flex-wrap: wrap;
+
+    /* Posicionar los bloques en el incio del contenedor al lado izquierdo  */
+    /* justify-content: flex-start; */
+
+    /* Permite colocar los bloques ordenador de izquierda a derecha originalmente, ubicados en el lado derecho  */
+    /* justify-content: flex-end; */
+
+    /* permite ubicar los elementos en el centro de mi pagina web  */
+    justify-content: center;
+
+    /* Podemos posicionar los elementos en todo el ancho del contenedor manteniendo los espacios entre los elementos  */
+    /* justify-content: space-between; */
+
+    /* Posicionar los elementos con un ancho aleatorio mas pequeño en el contenedor  */
+    /* justify-content: space-around; */
+
+    /* justify-content: right; */
+    /* justify-content:left; */
+    /* justify-content: safe; */
+
+    /* Permite posicionar los bloques hijos donde nosotros queramos, en la parte superior, inferio o en el centro verticalmente  */
+    
+    /* Alineacion en el centro verticalmente  */
+    /* align-items: center; */
+
+    /* Alinear en la parte superior  */
+    /* align-items: flex-start; */
+    /* align-items: baseline; */
+
+    /* alienado en la parte inferior, buttom  */
+    /* align-items: flex-end; */
+
+    /* permite que flex modifique automaticamente la altura de los elementos hijo  */
+    align-items: stretch;
+}
+
+.hijo{
+    background: greenyellow;
+    padding: 20px;
+    margin: 10px;
+    width: 50px;
+    /* height: 20px; */
+    color: black;
+}
+
+#menu{
+    width: 50%;
+    float: left;
+    background: #FF5C29;
+    margin: 10px;
+    height: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#menu ul{
+    line-height: 46px;
+    list-style: none;
+    padding: 20px;
+}
+
+
+#menu a{
+    text-decoration: none;
+}
+
+.contenido{
+    width: 50%;
+    float: right;
+}

@@ -1,0 +1,55 @@
+#menu{
+    font-family: Helvetica, Arial;
+    background-color:cornflowerblue;
+    width:100%;
+    text-transform: uppercase;/*Texto en mayuscula*/
+    margin-bottom: 20px;
+}
+
+/* ingresa al id:menu, luego al ul */
+#menu ul{
+    line-height: 46px;
+    list-style:none;
+}
+
+#menu ul li{
+    height: 46px;
+    /* inline block permite ubicar el menu en horizontal uno despues de otro  */
+    display: inline-block;
+    transition: all 300ms;/*Permite que haya una transiccion sobre el link del menu*/
+}
+
+/* Cuando se pasa el cursos por el li del menu hace un efecto de seleccion de color verde definido en este caso */
+/* #menu ul li:hover{
+    background: #235E3D;
+} */
+
+#menu a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* maquetear el footer  */
+footer{
+    font-family: Helvetica, Arial;
+    color: white;
+    height: 47px;
+    background: rgba(54, 111, 196, 0.7); /*Color trasnparente con opacidad 0,70 */
+    margin: 0px auto;
+    width: 65%; /*Ancho*/
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 47px;
+}
+
+/* Estilos Boton de subir la ventana a la parte superior  */
+.subir{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}

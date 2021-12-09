@@ -1,0 +1,197 @@
+/* configurar los estilos del menu  */
+.nav-enlace{
+    display: inline-block;
+    background: salmon;
+    color: #FFF;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.nav-enlace:hover{
+    background: rosybrown;
+}
+
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+    display: flex;
+    /* justify-content: space-around; */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+    justify-content: space-between;
+}
+
+.contenedor{
+    width: 80%;
+    height: 500px;
+    background: #FF5C29;
+    margin: 50px auto;
+    /* Agrupar los elementos uno depues de otro  */
+    display: flex;
+    flex-direction: row;
+    /* colcoa los elementos responsive  */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    /* Posiciona los elementos en la parte inferior verticalmente  */
+    /* align-content: flex-end; */
+    /* Posiciona los elementos en la parte superior  */
+    /* align-content: flex-start; */
+    /* Propiedad que coloca los elementos en el centro verticalmente  */
+    /* align-content: center; */
+}
+
+.hijo{
+    background: yellowgreen;
+    margin: 30px auto;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: black;
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$4 */
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$4 */
+
+
+.contenedor1{
+    width: 80%;
+    /* height: 500px; */
+    background: #FF5C29;
+    margin: 50px auto;
+    /* Agrupar los elementos uno depues de otro  */
+    display: flex;
+    flex-direction: row;
+    /* colcoa los elementos responsive  */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    /* Posiciona los elementos en la parte inferior verticalmente  */
+    /* align-content: flex-end; */
+    /* Posiciona los elementos en la parte superior  */
+    /* align-content: flex-start; */
+    /* Propiedad que coloca los elementos en el centro verticalmente  */
+    align-content: center;
+}
+
+
+.hijo1{
+    background: yellowgreen;
+    margin: 30px auto;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: black;
+    /* flex-grow: 1; */
+    /* flex-grow: 0;
+    flex-shrink: 1; */
+    flex: 1 1 auto;
+    flex: 0 1 auto;
+    order: 2;
+}
+
+.otro{
+    order: 1;
+}
+
+
+/* propiedades de las clases otros en los elementos hijo  */
+.otro1{
+    order: 4;
+    /* align-self: flex-end; */
+    align-self: stretch;
+    height: auto;
+}
+
+.otro2{
+    order: 1;
+    align-self: center;
+}
+
+.otro3{
+    order: 6;
+    align-self: flex-start;
+}
+
+.otro4{
+    order: 2;
+    align-self: flex-end;
+}
+
+.otro5{
+    order: 3;
+    align-self: flex-end;
+}
+
+.otro6{
+    order: 5;
+}
+
+
+
+/* Pie de pagina  */
+.flex-container{
+    width: 80%;
+    background: #FF5C29;
+    margin-top: 50px;
+    padding: 10px;
+    margin-left:  auto;
+    margin-right: auto;
+    /* Agrupar los elementos uno depues de otro  */
+    display: flex;
+    flex-direction: row;
+    /* colcoa los elementos responsive  */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* Posiciona los elementos en la parte inferior verticalmente  */
+    /* align-content: flex-end; */
+    /* Posiciona los elementos en la parte superior  */
+    /* align-content: flex-start; */
+    /* Propiedad que coloca los elementos en el centro verticalmente  */
+    /* align-content: center; */
+}
+
+.flex-container a{
+    text-decoration: none;
+    display: block;
+}
+
+
+.flex-item{
+    margin: 5px;
+    width: 90px;
+    height: 30px;
+    color: black;
+    background: greenyellow;
+    text-align: center;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+
+.box{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border: 1px solid black;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background: rgb(18, 134, 250);
+    color: #FFF;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.box img{
+    max-width: 50%;
+    padding: 10px;
+}

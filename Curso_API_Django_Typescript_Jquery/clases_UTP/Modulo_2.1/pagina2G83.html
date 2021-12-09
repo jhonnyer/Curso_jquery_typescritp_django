@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos css  -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Curso web</title>
+</head>
+<body>
+    <h1>Curso de programacion web</h1>
+    <button type="button" onclick="alert('Bienvenidos al curso de programación')">Presioname</button>
+    <h1>Boton prueba JS</h1>
+    <button type="button" ondblclick="myFunction()">Boton JS</button>
+    <div>
+        <img src="img/minion.jpg" width="350px" height="400px" alt="Imagen  minion">
+        <img src="img/png.jpg" width="350px" height="400px" alt="Imagen  Loro">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdN7T92EgOJfZk14G8kX8hq2_xyI_VjaFa4A&usqp=CAU" width="300px" height="400px" alt="Paisaje">
+    </div>
+    
+    <!-- listas ordenadas  -->
+    <!-- crtl+} -->
+    <h3>listas ordenadas</h3>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ol>
+
+    <h3>Listas desordenadas</h3>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+
+    <!-- Etiquetas de input  -->
+    <h4>Nombre de usuario</h4>
+    <input type="text" name="" id="">
+    <h4>Celular</h4>
+    <input type="number" name="" id="">
+    <h4>Contraseña</h4>
+    <input type="password" name="" id="">
+    <h4>Fecha</h4>
+    <input type="date" name="" id="">
+    <h4>Orientación sexual</h4>
+    <label for="">
+        Masculino
+        <input type="radio" name="radio" id="">
+        Femenino
+        <input type="radio" name="radio" id="">
+    </label>
+    <h4>Lenguajes de programacion</h4>
+    <label for="">
+        PHP <input type="checkbox" name="" id="">
+        HTML <input type="checkbox" name="" id="">
+        JAVASCRIPT <input type="checkbox" name="" id="">
+        TYPESCRITP <input type="checkbox" name="" id="">
+    </label>
+
+    <!-- ETIQUETAS DE UN TEXTO O UN PARRAFO  -->
+    <p>Hola mundo, <strong>Bienvenidos.</strong> Esto es un <u>texto subrayado</u>. <i>Esto es un texto en italica</i>
+    <a href="http://www.youtube.com" target="_blank" accesskey="t">esto es un enlace</a>. Esto es una cita, <q>el texto esta entre comillas</q>
+    Voy a añadir un salto de linea. <br> 
+    Voy a colocar <b>un texto en negrita</b>. Curso de programacion orientado en el año <time>2021</time> 
+    </p>
+
+    <a href="http://www.youtube.com" target="_blank">
+        <button type="button" title="pagina youtube">Presionar</button>
+    </a>
+
+    <div class="color_texto">
+        <h2 accesskey="k">Prueba de una clase en html</h2>
+        <p id="parrafo1">Hola mundo, <strong>Bienvenidos</strong>, este curso es de programacion. <u>Tenemos un texto subrayado.</u>
+            La siguiente etiqueta <i>coloca texto en italica.</i>La siguiente añade un link, <a href="http://www.youtube.com" target="_blank">Link de youtube.</a>
+            La etiqueta coloca <q>texto entre comillas</q> y un texto en <b>negrita</b>. Se usa un salto de linea. <br>Con el
+            fin de coloca un formato de fecha del año <time>2021</time>.
+        </p>
+        <p><strong>Nota: </strong> El acceso generado con accesskey depende del navegador. Por ejemplo, para ejecutarlo en google Chrome
+        se utiliza la tecla "Alt+tecla"</p>
+    </div>
+    <!-- Internet Explorer: [Alt] + accesskey
+        Chrome: [Alt] + accesskey
+        Firefox: [Alt] + [Shift] + accesskey
+        Safari: [Alt] + accesskey
+        Opera: [Alt] + accesskey -->
+
+    <button onclick="cambiaColor('blue');">Presionar</button>
+
+    <!-- DOM: todos los elementos que hacen parte del documento y que los puedo manipular  -->
+    <script src="js/index1_G83.js"></script>
+</body>
+</html>

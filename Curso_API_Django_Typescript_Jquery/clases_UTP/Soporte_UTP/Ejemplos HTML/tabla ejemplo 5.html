@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejemplo de tablas N°5</title>
+</head>
+<body>
+    <style>
+        th{
+            background-color: aqua;
+        }
+        .celda{
+            background-color:darkkhaki;
+        }
+    </style>
+    <table>
+        <caption>Titulo de la tabla</caption>
+        <thead>
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+                <th>Columna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="celda" rowspan="2">Celda 1</td>
+                <td class="celda">Celda 2</td>
+                <td class="celda">Celda 3</td>
+            </tr>
+            <tr>
+                <!--<td class="celda">Celda 4</td>-->
+                <td class="celda">Celda 5</td>
+                <td class="celda">Celda 6</td>
+            </tr>
+            <tr>
+                <td class="celda" colspan="3">Celda expandida 3 columna</td>
+            </tr>
+            <tr>
+                <td class="celda" >Celda 7</td>
+                <td class="celda">Celda 8</td>
+                <td class="celda">Celda 9</td>
+            </tr>
+           
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Pie de Tabla: </td>
+                <td> informacion</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+</body>
+</html> 

@@ -1,0 +1,218 @@
+body{
+    background-color: bisque;
+}
+
+/* menu de navegacion  */
+.nav-enlace{
+    background: salmon;
+    color: #FFF;
+    padding: 10px 30px;
+    /* convertir en un bloque el menu  */
+    display: block;
+    /* Colocar el texto horizontal y separar la parte superior de la pagina de los elementos, para tener una mejor distribucion  */
+    display: inline-block;
+    /* quitar decoracion de los enlace, que es la raya que aparece debajo del texto  */
+    text-decoration: none;
+}
+
+
+/* hover para cambiar la apariencia cuando se selecciona una opcion del menu  */
+.nav-enlace:hover{
+    background: rosybrown;
+}
+
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+    /* permitir distribuir los bloques de forma mas estirilizada  */
+    display: flex;
+    /* justify-content: space-around; */
+    /* justify-content: center; */
+    /* justify-content: right; */
+    justify-content: space-evenly;
+}
+
+.contenedor{
+    width: 80%;
+    height: 500px;
+    background: #FF5C29;
+    margin: 50px auto;
+    /* Agrupar los elementos div hijos uno despues de otro de forma horizontal */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-content: flex-end; */
+    /* align-content: flex-start; */
+    align-content: center;
+}
+
+.hijo{
+    background: greenyellow;
+    margin: 30px auto;
+    padding: 20px;
+    width: 80px;
+    height: 50px;
+    font-size: 40px;
+    color: black;
+}
+
+
+
+.contenedor1{
+    width: 80%;
+    /* height: 500px; */
+    background: #FF5C29;
+    margin: 50px auto;
+    /* Agrupar los elementos div hijos uno despues de otro de forma horizontal */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-content: flex-end; */
+    /* align-content: flex-start; */
+    align-content: center;
+    flex-grow: 1;
+}
+
+.hijo1{
+    background: greenyellow;
+    margin: 30px auto;
+    padding: 20px;
+    width: 80px;
+    height: 50px;
+    font-size: 40px;
+    color: black;
+    /* flex-grow: 1; */
+    /* flex-grow: 0;
+    flex-shrink: 1; */
+    /* flex: 1 1 auto; */
+    flex: 0 1 auto;
+    order: 2;
+}
+
+.otro1{
+    order: 1;
+}
+
+
+
+
+.contenedor2{
+    width: 80%;
+    height: 500px;
+    background: #FF5C29;
+    margin: 50px auto;
+    /* Agrupar los elementos div hijos uno despues de otro de forma horizontal */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-content: flex-end; */
+    /* align-content: flex-start; */
+    /* align-content: center; */
+    flex-grow: 1;
+}
+
+.hijo2{
+    background: greenyellow;
+    margin: 30px auto;
+    padding: 20px;
+    width: 80px;
+    height: 50px;
+    font-size: 40px;
+    color: black;
+    /* flex-grow: 1; */
+    /* flex-grow: 0;
+    flex-shrink: 1; */
+    /* flex: 1 1 auto; */
+    flex: 0 1 auto;
+    order: 2;
+}
+
+.otro2{
+    order: 1;
+    /* PErmite posicionar un elemeto verticalmente donde nosotros queramos */
+    /* align-self:flex-end; */
+    /* align-self: flex-start; */
+    align-self: center;
+}
+
+
+/* Orden de los ultimos elementos  */
+.otro_1{
+    order: 4;
+    align-self:flex-start;
+}
+
+.otro_2{
+    order: 1;
+    align-self: flex-start;
+}
+
+
+.otro_3{
+    order: 2;
+    align-self: stretch;
+    height: auto;
+}
+
+
+.otro_4{
+    order: 3;
+    align-self: flex-end;
+}
+
+
+
+.flex-container{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FF5C29;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flex-container a{
+    text-decoration: none;
+}
+
+.flex-item{
+    margin: 15px;
+    width: 20%;
+    height: 30px;
+    color: white;
+    background-color:rosybrown;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-transform: uppercase; */
+    text-transform: capitalize;
+}
+
+
+.flex-item:hover{
+    background-color: palevioletred;
+}
+
+.box{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border: 1px solid black;
+    background: darkcyan;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+
+.box img{
+    max-width: 50%;
+}

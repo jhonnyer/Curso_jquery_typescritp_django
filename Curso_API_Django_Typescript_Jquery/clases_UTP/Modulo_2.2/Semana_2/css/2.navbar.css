@@ -1,0 +1,130 @@
+.nav-enlace{
+    background: salmon;
+    color: #FFF;
+    padding: 10px 30px;
+    /* Convertimos en un bloque, en este caso vertical  */
+    display: block;
+    /* Utilizamos display: inline-block para colocar el 
+    menu horizontal y separar la parte superior de la pagina
+    para que tenga una mejor distribucion  */
+    display: inline-block;
+    /* quitar decoracion  */
+    text-decoration: none;
+}
+
+/* hover enlaces  */
+.nav-enlace:hover{
+    background: rosybrown;
+}
+
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+    /* permite distribuir los bloques del menu de una forma mas estirilizada horizontalmente */
+    display: flex;
+    justify-content: space-around;
+}
+
+.hijo{
+    background: greenyellow;
+    margin: 30px auto;
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+    font-size: 40px;
+    color: black;
+    /* esta propiedad permite que los hijos ocupen el 100% del contenedor  */
+    /* flex-grow: 0; */
+    /* flex-grow: 0;
+    flex-shrink: 0; */
+
+    /* flex para definir que el flex-grow=1 , el flex-shrink=1 y que esto sea
+    automático, sin necesidad de tener escrito en nuestro archivo CSS las 
+    propiedades anteriores */
+    flex: 0 1 auto;
+    /* order: 2; */
+}
+
+.otro{
+    /* order: 1;
+    flex: 0 1 auto; */
+    /* configurar una posicion en especifica del bloque d donde nosotros queramos  */
+    /* align-self: flex-end; */
+    /* align-self:center; */
+
+    /* stretch permite dejar la altura automatica, y configurar la altuo que ocupe 
+    todo el contenedor con height en auto */
+    align-self: stretch;
+    height: auto;
+}
+
+
+.contenedor{
+    width: 80%;
+    height: 500px;
+    background: #FF5C29;
+    margin: 50px auto;
+    /* Agrupa los elementos uno despues de otro de forma horizontal  */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Permite crear alternativas para los bloques hijos relacionada con la altura,
+    permitiendo que flex los modifique  */
+    /* align-items: stretch; */
+
+    /* agrupa los bloques en la parte superior del contenedor  */
+    /* align-content: flex-start; */
+
+    /* Agrupa los bloques en la parte final del contenedor  */
+    /* align-content: flex-end; */
+
+    /* La siguiente propiedad agrupa los bloques entre el top y el final del contenedor  */
+    /* align-content: space-between; */
+}
+
+
+
+/* container ultimo  */
+.flex-container2 {
+    margin-top: 50px;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: #FCA17D;
+     height: 400px;
+     width: 70%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;/*aliniamos iten de este contenedor de forma orizontalme justificando al centro del elementos fexble contenedor*/
+     align-items: center;          /*aliniamos vericalmente los itens dentro del contenedor cuando hay mas de una de estos itens*/
+ }
+ 
+
+.flex-item2 {
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    background-color: #9A348E;
+    text-align: center;
+    display: flex;
+    align-items: center; /*aliniamos vericalmente los elementos contenidos en el contenedor flex cuando hay solo una fila de elementos*/
+    justify-content:center; /*aliniamos iten de este contenedor de forma orizontalme justificando al centro del elementos fexble contenedor*/
+}
+
+
+
+/* box e imagen  */
+.box {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border: 1px solid black;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+} 
+
+.box img {
+   max-width: 50%;
+} 

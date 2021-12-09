@@ -1,0 +1,152 @@
+/* Como vamos a trabajar con clases, utilizamos un punto (.) + nombre de la clase  */
+.box-1{
+    width: 300px;
+    height: 200px;
+    background: lime;
+    padding: 50px;
+    margin: 20px;
+}
+
+.box-2{
+    margin:100px;
+    width: 200px;
+    height: 100px;
+    background: lightcoral;
+}
+
+.box-3{
+    margin-top: 50px;
+    margin-left: 300px;
+    background: salmon;
+    padding: 15px;
+}
+
+.box-4{
+    width: 50%;
+    background: lawngreen;
+    padding: 15px;
+
+}
+
+[class*=vox]{
+    width: 200px;
+    height: 200px;
+    margin: 2em;
+}
+
+.vox-1{
+    background: yellowgreen;
+    border: 5px solid red;
+    border-top-width: 50px;
+    border-top-color: transparent;
+}
+
+.vox-2{
+    background: lightseagreen;
+    border-left-style: dotted;
+    border-left-color: blue;
+    border-right: ridge;
+}
+
+.vox-3{
+    background: yellowgreen;
+    border: 3px dashed brown
+}
+
+.box-5{
+    width: 250px;
+    height: 250px;
+    /* es para crentrar el bloque en el centro del navegador  */
+    margin: 1em auto;
+    font-size: 2.5em;
+    padding: 10px;
+    text-align: center;
+    background: lightseagreen;
+    position: relative;
+    top: 50px;
+    right: 200px;
+}
+
+
+/* Configurar los estilos del conteneder  */
+
+.container{
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    position: relative;
+    background: beige;
+}
+/* Todos los elementos de clase que inicien con la palabras cox aplique los siguientes cambios  */
+[class^=cox]{
+    width: 50px;
+    height: 50px;
+}
+
+.cox-1{
+    background: yellowgreen;
+    border: 4px solid palevioletred;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.cox-2{
+    border: 4px solid blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: slategrey;
+}
+
+.cox-3{
+    border: 4px solid green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgb(192, 241, 241);
+}
+
+.cox-4{
+    border: 4px solid lightseagreen;
+    background: rgb(224, 218, 131);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.cox-5{
+    border: 4px dashed darkorange;
+    position: absolute;
+    top: 36%;
+    left: 36%;
+}
+
+.mp-1{
+    width: 100%;
+    padding: 10px;
+    background: lightcoral;
+
+}
+
+.mp-2{
+    width: 40%;
+    padding: 10px;
+    background: skyblue;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 7%;
+}
+
+.mp-3{
+    width: 40%;
+    padding: 10px;
+    background:royalblue;
+    float: right; 
+    margin-bottom: 20px;
+    margin-right: 7%;
+}
+

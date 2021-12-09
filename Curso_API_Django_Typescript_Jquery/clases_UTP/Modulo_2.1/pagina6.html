@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primero se incluye el script de javascript  -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <!-- Incluir Jquery ui  -->
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <!-- Estilos CSS JQuery UI permite incluir funciones como redimensionar, selectable, etc -->
+    <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css"></LINk>
+    <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.css"></LINk>
+    <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.css"></LINk>
+    <!-- scripts jss  -->
+    <script src="js/6.Pag6.js"></script>
+    <script src="js/6.p6_1.js"></script>
+    <link rel="stylesheet" href="css/style_p6.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="global">
+        <header>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="reloj.html">Reloj</a></li>
+                    <li><a href="about.html">Información</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="content">
+            <div id="box">
+                <!-- cargar acordeon  -->
+                <h2>Sobre mi</h2>
+                <div id="acordeon">
+                    <h3>¿Quiénes somos?</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis feugiat gravida. In lacinia ac nunc in porta.</p>
+                    </div>
+                    <h3>Nuestros servicios</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis feugiat gravida. In lacinia ac nunc in porta.</p>
+                    </div>
+                    <h3>Contactos</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis feugiat gravida. In lacinia ac nunc in porta.</p>
+                    </div>
+                </div>
+            </div>
+             <aside id="sidebar">
+                <div id="about">
+                    <h4><span>Datos de contacto</span></h4>
+                    <img src="img/minion.jpg" alt="caracol">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis feugiat gravida. In lacinia ac nunc in porta.</p>              
+                </div>
+             </aside>
+             <div id="box">
+                <!-- cargar acordeon  -->
+                <h2>Sobre mi</h2>
+                <div id="acordeon1">
+                    <h3>¿Quiénes somos?</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis feugiat gravida. In lacinia ac nunc in porta.</p>
+                    </div>
+                    <h3>Nuestros servicios</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis feugiat gravida. In lacinia ac nunc in porta.</p>
+                    </div>
+                    <h3>Contactos</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis feugiat gravida. In lacinia ac nunc in porta.</p>
+                    </div>
+                </div>
+            </div>
+             <aside id="sidebar">
+                <div id="about">
+                    <h4><span>Datos de contacto</span></h4>
+                    <img src="img/minion.jpg" alt="caracol">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis feugiat gravida. In lacinia ac nunc in porta.</p>              
+                </div>
+                <!-- Cambiar enlace  -->
+                <a id="enlace" href="http://www.facebook.com" target="_blank">Facebook</a>
+                <form>
+                    <input type="button" onclick="Href()" value="Cambiar url y texto">
+                </form>
+             </aside>
+             <!-- permite colocar el footer en la parte de abajo eliminando flotantes  -->
+             <div class="clearfix"></div>
+        </section>
+    </section>  
+    <!-- footer o pie de pagina -->
+    <footer>
+        Master en Javascript
+        <!-- Boton de subir la pagina mediante JS  -->
+        <a href="#" class="subir">Ir arriba</a>
+    </footer>
+</body>
+</html>

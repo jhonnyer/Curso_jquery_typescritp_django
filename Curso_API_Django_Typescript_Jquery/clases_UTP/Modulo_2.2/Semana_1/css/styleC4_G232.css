@@ -1,0 +1,77 @@
+/* color de fondo a todo el cuerpo de la pagina web  */
+body{
+    /* background-color: #48C9B0; */
+    background-image: url('../img/minion.jpg');
+    background-repeat: repeat-x;
+}
+
+.contenedor{
+    /* background-color: #abbcff; */
+    /* padding: 40px; */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCZn_gNa-oGvp1QI2e-y6wzqiWzVyKWtIYKQ&usqp=CAU');
+    background-repeat: inherit;
+    border: 2px solid orange;
+    width: 400px;
+    height: 280px;
+}
+
+
+p{
+    padding: 20px;
+}
+
+.morado{
+    background-color: purple;
+}
+
+.verde{
+    background-color: #009846;
+}
+
+.naranja{
+    background-color: rgb(239,127,26);
+}
+
+/* imagen de fondo  */
+.fondoimg{
+    max-width: 500px;
+    min-height: 350px;
+    background-image: url('../img/minions.jpg'),url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCZn_gNa-oGvp1QI2e-y6wzqiWzVyKWtIYKQ&usqp=CAU');
+    /* background-repeat:space; */
+}
+
+.texto{
+    background-color: orange;
+    background-image: inherit;
+}
+
+.movil{
+    background-image: url('../img/minion.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.fijo{
+    background-image: url('../img/minion.jpg');
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    color: hsl(168, 83%, 9%);
+}
+
+.elemento{
+    /* funcion calc  */
+    /* width: calc(200px + 1em); */
+    /* Funcion valor minimo  */
+    /* width: min(200px, 25%); */
+    width: max(200px, 25%, 14vw);
+    height: 200px;
+    background: blue;
+    color: white;
+}
+
+.element::before{
+    content: attr(data-autor);
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}

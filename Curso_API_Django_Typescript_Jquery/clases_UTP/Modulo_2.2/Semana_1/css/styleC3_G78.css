@@ -1,0 +1,185 @@
+.ligero{
+    font-weight: lighter;
+}
+
+.normal{
+    font-weight: normal;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.pesado{
+    font-weight: bolder;
+}
+
+.f_100{
+    font-weight: 100;
+}
+
+.f_400{
+    font-weight: 400;
+}
+
+.f_600{
+    font-weight: 600;
+}
+
+.f_900{
+    font-weight: 900;
+}
+
+.normal{
+    font-variant: normal;
+}
+
+.small{
+    font-variant: small-caps;
+}
+
+
+/* Estilos color de texto  */
+.cont1{
+    font-weight: bold;
+}
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: #0000FF;
+}
+
+.green{
+    color:rgb(0,128,0);
+}
+
+.amarillo{
+    color: yellow;
+}
+
+.azul_hex{
+    color: #2980B9 ;
+}
+
+
+.azul_rgb{
+    color: rgb(41, 128, 185);
+}
+
+.azul_hsl{
+    color: hsl(204, 64%, 44%);
+}
+
+.left{
+    text-align: left;
+    font-weight: bold;
+}
+
+.right{
+    text-align: right;
+}
+
+.center{
+    text-align: center;
+    font-weight: bold;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.cont2{
+    /* interlineado  */
+    line-height: 1.5;
+    padding:20px;
+    background: bisque;
+}
+
+/* Vamos a generar las clases para alinear verticalmente texto en una tabla  */
+
+
+.top{
+    vertical-align: top;
+}
+
+.mid{
+    vertical-align: middle;
+}
+
+.bot{
+    vertical-align: bottom;
+}
+
+.tabla{
+    height: 200px;
+}
+
+/* formato de indices y superindices  */
+.baseline{
+    vertical-align: baseline;
+}
+
+.sub{
+    vertical-align: sub;
+}
+
+.super{
+    vertical-align: super;
+}
+
+.pixeles{
+    vertical-align: -20px;
+}
+
+.bloque{
+    height: 200px;
+    width: 300px;
+    background-color: rgb(0,128,0);
+    display: inline-table;
+}
+
+.texto{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+/* Textos con y sin decoracion  */
+.none{
+    text-decoration: none;
+}
+
+.inherit{
+    text-decoration: inherit
+}
+
+.overline{
+    text-decoration: overline;
+}
+
+.through{
+    text-decoration: line-through;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.enlace{
+    text-decoration: none;
+}
+
+/* Estilos de sombra */
+.som_pos{
+    text-shadow: 7px 4px 5px blue;
+}
+
+.som_neg{
+    text-shadow: -7px -4px 8px blue;
+}

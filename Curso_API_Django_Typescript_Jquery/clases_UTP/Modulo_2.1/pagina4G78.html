@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primero se incluye el script de javascript  -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <!-- Incluir Jquery ui  -->
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+     <!-- Estilos CSS JQuery UI permite incluir funciones como redimensionar, selectable, etc -->
+     <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css"></LINk>
+     <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.css"></LINk>
+     <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.css"></LINk>
+    <!-- script de js -->
+    <script src="js/js_p4/form_p4_G78.js"></script>
+    <!-- importar un stilo css  -->
+    <link rel="stylesheet" href="css/style_g78_p4.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Contactos</a></li>
+                <li><a href="#">Informacion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <table>
+        <caption>Titulo de la tabla</caption>
+        <colgroup>
+            <col style='background-color:blue'> 
+            <col style='background-color:rgb(205, 216, 45)'> 
+            <col style='background-color:rgb(201, 81, 51)'> 
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+                <th>Columna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+                <td>Celda 3</td>
+            </tr>
+            <tr>
+                <td>Celda 4</td>
+                <td>Celda 5</td>
+                <td>Celda 6</td>
+            </tr>
+            <tr>
+                <td>Celda 7</td>
+                <td>Celda 8</td>
+                <td>Celda 9</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Tabla 1.</td>
+                <td>Información</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <hr>
+    <table style="margin: 0px auto;">
+        <caption>Titulo de la tabla</caption>
+        <colgroup>
+            <col span="2" style='background-color:rgb(163, 219, 117)'> 
+            <col style='background-color:rgb(236, 149, 48)'> 
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+                <th>Columna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+                <td>Celda 3</td>
+            </tr>
+            <tr>
+                <td>Celda 4</td>
+                <td>Celda 5</td>
+                <td>Celda 6</td>
+            </tr>
+            <tr>
+                <td>Celda 7</td>
+                <td>Celda 8</td>
+                <td>Celda 9</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Tabla 1.</td>
+                <td>Información</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <div class="form">
+        <form action="#" method="POST" id='formulario' onsubmit="return false">
+            <label for="name">Nombre
+                <input type="text" name="name" id="name">
+            </label><br>
+            <span id="error_nombre"></span>
+
+            <label for="apellido">Apellidos
+                <input type="text" name="apellido" id="apellido">
+            </label><br>
+            <span id="error_apellidos"></span>
+
+            <label for="edad">Edad 
+                <input type="number" name="edad" id="edad">
+            </label><br>
+            <label for="password">Password
+                <input type="password" name="" id="">
+            </label><br>
+            <label for="fecha">Fecha de nacimiento 
+                <input type="date" name="fecha" id="fecha">
+            </label><br>
+            <label for="imagen">Imagen 
+                <input type="file" name="imagen" id="imagen">
+            </label><br>
+
+            <p>Seleccione su lenguaje de programacion favorito</p>
+            <label for="html">HTML</label>
+            <input type="radio" name="fav_lenguaje" id="html" value="html"><br>
+            <label for="php">PHP</label>
+            <input type="radio" name="fav_lenguaje" id="php" value="php"><br>
+            <label for="js">Javascript</label>
+            <input type="radio" name="fav_lenguaje" id="html" value="js"><br>
+
+            <p>Seleccione tu edad</p>
+            <input type="radio" name="age" id="age1" value="30">
+            <label for="age1">0-30</label><br>
+            <input type="radio" name="age" id="age2" value="60">
+            <label for="age2">31-60</label><br>
+            <input type="radio" name="age" id="age3" value="100">
+            <label for="age3">61-100</label><br>
+
+            <p>Selecione la mascota que desea tener</p>
+            <input type="checkbox" name="mascota1" id="mascota1" value="perro">
+            <label for="mascota1">Un perro</label>
+            <input type="checkbox" name="mascota2" id="mascota2" value="gato">
+            <label for="mascota2">Un gato</label>
+            <input type="checkbox" name="mascota3" id="mascota3" value="loro">
+            <label for="mascota3">Un loro</label><br>
+
+            <input type="submit" value="Enviar formulario">
+            <input type="reset" value="Resetear formulario">
+        </form>
+    </div>
+
+    <div class="box dashed">
+        <h2>Informacion de contacto</h2>
+        <p id="p_name">
+            <strong>Nombre: </strong><span></span>
+        </p>
+        <p id="p_apellidos">
+            <strong>Apellidos: </strong><span></span>
+        </p>
+        <p id="p_edad">
+            <strong>Edad: </strong><span></span>
+        </p>
+        <p id="p_fecha">
+            <strong>Fecha de nacimiento: </strong><span></span>
+        </p>
+    </div>
+    
+</body>
+</html>

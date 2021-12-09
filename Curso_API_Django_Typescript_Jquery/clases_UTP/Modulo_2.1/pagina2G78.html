@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- importar jquery javascript  -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <!-- incluir jquery ui  -->
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <!-- Cuadro de dialogo js  -->
+    <script src='js/5.cuadro_dialogo.js'></script>
+    <script src='js/5.Tabs.js'></script>
+                <!-- Estilos CSS JQuery UI permite incluir funciones como redimensionar, selectable, etc -->
+    <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css"></LINk>
+    <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.css"></LINk>
+    <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.css"></LINk>
+            <!-- Estilos CSS local  -->
+    <LINk rel="StyleSheet" href="css/style2.css" type="text/css"></LINk>
+    <!-- Estilos css  -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title>Curso_WEB</title>
+</head>
+<body>
+    <h1>Curso fundamentos programación web</h1>
+    <a href="pagina1.html" title="Datos de la web">Mis datos</a>
+    <a href="#" title="Loguearse en la web">Identificarse</a>
+    <a href="#" title="Datos de contacto">Contactos</a>
+
+    <h3>Cuadro de Dialogo</h3>
+    <button id="lanzar_popup">Lanzador</button>
+    <!-- display none hace que el texto solo se muestre cuando se presione el boton  -->
+    <div id="popup" title="¿Estas seguro?" style="display: none;">
+        <p>Curso de javascript</p>
+    </div>
+
+    <h3>Panel de pestañas</h3>
+    <div id="pestanas">
+        <ul>
+            <li><a href="#tabs-1">Pestaña 1</a></li>
+            <li><a href="#tabs-2">Pestaña 2</a></li>
+            <li><a href="#tabs-3">Pestaña 3</a></li>
+        </ul>
+        <div id="tabs-1">
+            <p>Información pestaña 1</p>
+        </div>
+        <div id="tabs-2">
+            <p>Información pestaña 2</p>
+        </div>
+        <div id="tabs-3">
+            <p>Información pestaña 3</p>
+        </div>
+    </div>
+
+    <h3>Añadir nuevos enlaces en la lista</h3>
+        <br>
+        <!-- disable deshabilita el boton, pero se vuelve a activar en el script de js  -->
+        <input type="text" id="add_link"><button id="add_button" disabled="disabled">Añadir</button>
+
+        <ul id="menu">
+            <li><a href="https://www.google.com/"></a></li>
+            <li><a href="https://www.facebook.com"></a></li>
+            <li><a href="https://www.twitter.com"></a></li>
+        </ul>
+
+    <h3>Nombre</h3>
+    <input type="text" value="">
+    <button type="submit">Enviar</button>
+
+    <br>
+    <button type="button" onclick="alert('Boton presionado')">Presionado</button>
+
+
+    <!-- listas ordenadas  -->
+    <h3>listas ordenadas</h3>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+    <!-- listas desordenadas  -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <!-- Tipos de input  -->
+    <h3>Tipos de input</h3>
+    <h5>Nombre, tipo input texto</h5>
+    <input type="text" name="" id="">
+    <h5>Tipo numerico</h5>
+    <input type="number" name="" id="">
+    <h5>Tipo radio button</h5>
+    <!-- El nombre de la etiqueta de tipo input radio button debe ser el mismo con el fin de que me permita escoger una solo opcion  -->
+    <input type="radio" name="radio" id="">
+    <input type="radio" name="radio" id="">
+    <input type="radio" name="radio" id="">
+    <h5>Tipo checkbox</h5>
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">    
+    <h5>Fecha</h5>
+    <input type="date" name="" id="">
+
+    <!-- uso de etiquetas en los textos  -->
+    <p class="texto">Hola mundo, <strong>Bienvenidos</strong>, a este curso de programación.
+    <u>Aqui tenemos un texto subrayado</u>. Tambien, <i>tenemos un texto en italica o en cursiva.</i> Puedes acceder
+    a un link mediante la etiqueta a, por ejemplo acceder al link de youtube, <a href="http://www.youtube.com" target="_blank">Link de youtube</a>
+   Tenemos <q>un texto entre comillas</q> y un <b>un texto en negrilla</b>. Vamos a añadir un salto de linea
+   con la etiqueta br. <br>. Finalmente, el año donde se esta dictando este curso es el <time>2021</time>
+    </p>
+    <hr>
+
+    <div class="parrafo texto">
+        <h2 title="DIV DE PRUEBA">Texto de preba</h2>
+       <!-- uso de etiquetas en los textos  -->
+        <p id="parrafo1">Hola mundo, <strong>Bienvenidos</strong>, a este curso de programación.
+        <u>Aqui tenemos un texto subrayado</u>. Tambien, <i>tenemos un texto en italica o en cursiva.</i> Puedes acceder
+        a un link mediante la etiqueta a, por ejemplo acceder al link de youtube, <a href="http://www.youtube.com" target="_blank" accesskey="t">Link de youtube</a>
+       Tenemos <q>un texto entre comillas</q> y un <b>un texto en negrilla</b>. Vamos a añadir un salto de linea
+       con la etiqueta br. <br>Finalmente, el año donde se esta dictando este curso es el <time>2021</time>
+        </p>
+    </div>
+
+                <!-- DIV de imagenes -->
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <h3>Imagen de prueba</h3>
+                <img src="img/minion.jpg" width='350px' height="350px" alt="Imagen de minion" title="Imagen de minion">
+                <img src="img/png.jpg" width='40%' height="400px" alt="Imagen de prueba">
+                <img src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/5c8906b95cafe8a97023d4a6/20-perro-en-el-cesped-corriendo-con-la-pelota-principal.jpg" width="300px" height="400px" alt="perro">
+            </div>
+        </div>
+    
+    <!-- Tablas  -->
+    <table>
+        <caption>Tabla 1</caption>
+        <thead>
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+                <th>Columna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+                <td>Celda 3</td>
+            </tr>
+            <tr>
+                <td>Celda 4</td>
+                <td>Celda 5</td>
+                <td>Celda 6</td>
+            </tr>
+            <tr>
+                <td>Celda 7</td>
+                <td>Celda 8</td>
+                <td>Celda 9</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Pie de pagina</td>
+            <td>Informacion</td>
+        </tfoot>
+    </table>
+</body>
+</html>

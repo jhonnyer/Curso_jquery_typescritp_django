@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- importar jquery javascript  -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <!-- incluir jquery ui  -->
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <!-- Cuadro de dialogo js  -->
+    <script src='js/5.cuadro_dialogo.js'></script>
+    <script src='js/5.Tabs.js'></script>
+    <!-- <script src='js/5.Trabajar_DOM_Textos.js'></script> -->
+                <!-- Estilos CSS JQuery UI permite incluir funciones como redimensionar, selectable, etc -->
+    <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css"></LINk>
+    <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.css"></LINk>
+    <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.css"></LINk>
+            <!-- Estilos CSS local  -->
+    <LINk rel="StyleSheet" href="css/style2.css" type="text/css"></LINk>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Curso fundamentos programación web</h1>
+    <!-- Menu  -->
+    <nav id="menu">
+        <ul>
+            <li><a href="pagina1.html">Inicio</a></li>
+            <li><a href="#">Reloj</a></li>
+            <li><a href="#">Información</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <h3>Cuadro de Dialogo</h3>
+    <button id="lanzar_popup">Lanzador</button>
+    <!-- display none hace que el texto solo se muestre cuando se presione el boton  -->
+    <div id="popup" title="¿Estas seguro?" style="display: none;">
+        <p>Curso de javascript</p>
+    </div>
+
+    <h3>Panel de pestañas</h3>
+    <div id="pestanas">
+        <ul>
+            <li><a href="#tabs-1">Pestaña 1</a></li>
+            <li><a href="#tabs-2">Pestaña 2</a></li>
+            <li><a href="#tabs-3">Pestaña 3</a></li>
+        </ul>
+        <div id="tabs-1">
+            <p>Información pestaña 1</p>
+        </div>
+        <div id="tabs-2">
+            <p>Información pestaña 2</p>
+        </div>
+        <div id="tabs-3">
+            <p>Información pestaña 3</p>
+        </div>
+    </div>
+    <footer>
+        curso programacion web
+        <!-- Boton de subir la pagina mediante JS  -->
+        <a href="#" class="subir">Ir arriba</a>
+    </footer>
+</body>
+</html>

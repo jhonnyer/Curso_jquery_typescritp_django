@@ -1,0 +1,81 @@
+/* estilos de selectores de etiquetas  */
+p{
+    color: red;
+}
+
+h1{
+    font-size: 40px;
+}
+
+/* estilos para los selectores de clases, para acceder a un selector de clase se utiliza un punto(.) seguido del nombre de la clase */
+.title{
+    color: navy;
+}
+
+.text1{
+    font-size: 18px;
+}
+
+/* Estilos para los selectores de id, para dar un estilo a un id se utiliza # seguido del nombre del id  */
+#text2{
+    color: orange;
+    font-size: 25px;
+}
+
+/* Selectores universales  */
+*{
+    background-color: bisque;
+}
+
+/* selector universal a un Atributo de una etiqueta  */
+/* [href]{
+    color: green;
+} */
+
+/* Atributo que tenga el valor al menos una vez  */
+[class~='title']{
+    color:brown;
+}
+
+/* Attibuto que tenga exactamente el valor indicado  */
+[class|='text1']{
+    color: coral;
+}
+
+/* Estilos a un atributo que inicie con el valor indicado  */
+[class^='title']{
+    font-size: 50px;
+}
+
+/* Atributo que finalice con el valor indicado */
+[class $='text3']{
+    font-size: 40px;
+    color: darkmagenta;
+}
+
+/* Estilos de selectores combinados  */
+h3+h4{
+    color: blueviolet;
+}
+
+/* Estilos selector combinado hermano general, busca todos los elementos que comparten el mismo padre  */
+h1~h3{
+    background-color: aquamarine;
+}
+
+/* Estilos a un selector combinado descendente, aplica el estilo a todos los elementos hijos de una etiqueta padre  */
+div span{
+    color: indigo;
+    background-color: rgb(21, 156, 156);
+}
+
+/* Estilo para selector de hijo directo, el cual se va a ver reflejado al hijo directo del selector seleccionado  */
+p>span{
+    color: white;
+    background-color: blue;
+}
+
+/* herencia de estilos de una etiqueta padre hacia una etiqueta hijo */
+a{
+    color: inherit;
+}

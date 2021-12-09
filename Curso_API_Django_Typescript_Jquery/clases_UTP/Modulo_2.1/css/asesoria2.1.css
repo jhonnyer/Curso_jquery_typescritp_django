@@ -1,0 +1,135 @@
+/* estilo universal, es decir que va a afectar a todos los elementos de mi pagina web  */
+*{
+    margin: 3px;
+    padding: 0px;
+}
+
+
+/* estilos del body, imagen de fondo  */
+body{
+    /* Cargar la imagen de fondo que la tengo almacenada en mi carpeta img  */
+    background:url('../img/hojas.jpg');
+    /* para que la imagen se muestre en toda la pantalla  */
+    background-attachment: fixed;
+}
+
+/* el id global abarca la cabecera header y el body de mi pagina web  */
+/* PAra modificar el estilo de un ID debo utilizar el #  */
+#global{
+    width: 65%;
+    /* Para centrar la seccion global  */
+    margin: 0px auto; 
+    margin-top: 10px;
+    padding: 25px;
+    background: white;
+    /* sombra a la seccion global en gris  */
+    box-shadow: 0px 0px 2px gray;
+}
+
+/* Vamos a dar unos estilos al menu de navegacion  */
+#menu{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #333;
+    width: 100%;
+    /* colocar texto del menu en mayuscula */
+    text-transform: uppercase; 
+    margin-bottom: 20px;
+}
+
+#menu ul{
+    /* margen superior a la linea */
+    line-height: 46px;
+    list-style: none;
+}
+
+#menu ul li{
+    height: 45px;
+    /* voy a  acomodar los elementos de la lista de forma horizontal  */
+    display: inline-block;
+    transition: all 300ms;
+}
+
+.clearfix{
+    float: none;
+    /* limpie los flotadores  */
+    clear: both;
+}
+
+/* Voy a modificar los estilos del enlace que estan en la etiqueta a  */
+#menu a{
+    display: block;
+    color: white;
+    /* permite quitar el subrayado del enlace  */
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#menu ul li:hover{
+    background: rgb(119, 113, 113);
+}
+
+/* Vamos a darle estilo al aside de mi pagina web  */
+#sidebar{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 31%;
+    float: right;
+}
+
+#sidebar h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+}
+
+#sidebar h4 span{
+    background: white;
+    padding: 5px;
+}
+
+#sidebar img{
+    width: 100%;
+}
+
+#sidebar p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+/* #Vamos a dar estilos al id box que contiene el acordeon de informacion  */
+#box{
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+}
+
+#acordeon{
+    margin-top: 20px;
+}
+
+/* #Vamos a dar estilos al footer  */
+footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    height: 47px;
+    background: rgb(51, 51,51, 0.7); /*0.7 hace referencia a la trasnparecencia*/
+    margin: 0px auto; /*Para centrar la etiqueta footer*/
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5opx;
+    line-height: 47px; 
+}
+
+/* #Vamos a dar estilos a la clase subir,
+A una clase para dar estilos se utiliza un punto */
+.subir{
+    color: white;
+    /* Eliminar el subrayado del enlace  */
+    text-decoration: none;
+    display: block;
+    float: right;
+}

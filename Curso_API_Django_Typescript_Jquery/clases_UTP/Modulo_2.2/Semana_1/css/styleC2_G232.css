@@ -1,0 +1,115 @@
+body{
+    font-family: Arial;
+    font-size: 17px;
+}
+
+.contenido{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(7, 7, 7);
+    background-color: #a6a6b9;
+    font-size: 80%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p{
+    line-height: 3.5;
+}
+
+.mayus_min{
+    font-variant: small-caps;
+}
+
+/* los estilos a un id, se utiliza una almohadilla o un numeral  */
+#mayus{
+    text-transform: uppercase;
+}
+#min{
+    text-transform: lowercase;
+}
+
+#capitalice{
+    text-transform: capitalize;
+}
+
+.text__derecha{
+    text-align: right;
+    background-color: rgb(43, 39, 39);
+    color: white;
+}
+
+.text__izquierda{
+    text-align: left;
+    background-color: rgb(43, 39, 39);
+    color: white;
+}
+
+.text_centro{
+    text-align: center;
+    background-color: rgb(43, 39, 39);
+    color: white;
+}
+
+.text_justificado{
+    text-align: justify;
+    background-color: rgb(43, 39, 39);
+    color: white;
+}
+
+/* #Estilos de texto  */
+.curvisa{
+    font-family: cursive;
+}
+
+.georgia{
+    font-family: georgia;
+}
+
+.fant{
+    font-family: fantasy;
+}
+
+.monospace{
+    font-family: monospace;
+}
+
+
+/* Tamanos de tipos de letra  */
+.peque{
+    font-size:small;
+}
+
+.medio{
+    font-size: medium;
+}
+
+.grande{
+    font-size: large;
+}
+
+.x_grande{
+    font-size: x-large;
+}
+
+h1{
+    font-size: 32px;
+}
+
+h2{
+    font-size: 2em;
+}
+
+
+/* Estilos de letra de una fuente  */
+.normal{
+    font-style: normal;
+}
+
+#italica{
+    font-style:italic;
+}
+
+.oblique{
+    font-style: oblique;
+}

@@ -1,0 +1,128 @@
+.nav-enlace{
+    background: salmon;
+    color: #FFF;
+    padding: 10px 30px;
+    display: block;
+    /* Permite colocar el menu horizontal y separar la parte superior de la pagina manteniendo
+    una distancia entre cada bloque  */
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+/* hover enlaces del menu de navegacion  */
+.nav-enlace:hover{
+    background:rosybrown;
+}
+
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+}
+
+
+/* Menu con flexbox  */
+.contenedor{
+    width: 80%;
+    height: 500px;
+    background: #FF5C29;
+    margin: 50px auto;
+    /* Agrupar los elementos uno despues del otro de forma horizontal  */
+    display: flex;
+    
+    /* Esta propiedad permite ordenar los bloques del lado izquierdo al derecho en orden  */
+    flex-direction: row;
+
+    /* Esta propiedad permite ordenar los bloques de la derecha a la izquierda, primero va en este caso el bloque A  */
+    /* flex-direction: row-reverse; */
+
+    /* Este propiedad nos permite organizar los bloques ordenador de forma vertical  */
+    /* flex-direction: column; */
+
+    /* Permite mantener el ancho de los elementos  */
+    flex-wrap: wrap;
+
+    /* Permite mantener los bloques inicialmente en su posicion original al lado izquierdo  */
+    /* justify-content: flex-start; */
+
+    /* Permite organizar los bloques del lado derecho de mi pagina web  */
+    /* justify-content: flex-end; */
+
+    /* los bloques van a estar centrados en el contenedor  */
+    justify-content: center;
+
+    /* Propiedad space-between permite que los bloques tengan un mayor espacio entre ellos ocupando todo el contenedor  */
+    /* justify-content: space-between; */
+
+    /* modificar el espacio entre los bloques de forma aleatoria en el contenedor  */
+    /* justify-content: space-around; */
+
+    /* align-items permite posicionar los bloques hijos al top, al final, al centro del contenedor */
+    align-items: center;
+
+    /* alinea el bloque en la parte superior  */
+    /* align-items: flex-start; */
+    /* align-items: baseline; */
+
+    /* alinea el bloque en la parte inferior  */
+    /* align-items: flex-end; */
+
+    /* vamos a definir la altura automatica con la propiedad stretch  
+    la cual permite que flex modifique automaticamente la altura de los contenedores hijos*/
+    align-items: stretch;
+}
+
+.hijo{
+    background:greenyellow;
+    padding:20px;
+    margin: 10px;
+    width: 50px;
+    color: black;
+    /* height: 10px; */
+}
+
+.hijo a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#menu{
+    /* background: #333; */
+    text-transform: uppercase;
+    /* margin-bottom: 20px; */
+}
+
+#menu ul{
+    /* background-color: rgb(212, 174, 126); */
+    /* height: 46px; */
+    line-height: 46px;
+    list-style: none;
+}
+
+#menu ul li{
+    width: 100px;
+    height: 40px;
+    background: salmon;
+    padding: 10px;
+    /* display: inline-block; */
+}
+
+/* #menu a{
+    display: block;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+} */

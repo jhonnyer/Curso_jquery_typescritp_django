@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primero se incluye el script de javascript  -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <!-- Incluir Jquery ui  -->
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+     <!-- Estilos CSS JQuery UI permite incluir funciones como redimensionar, selectable, etc -->
+     <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css"></LINk>
+     <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.css"></LINk>
+     <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.css"></LINk>
+    <!-- #Importando el archivo js que me permite modificar la vista del menu de pestañas  -->
+    <script src="js/5.Tabs.js"></script>
+     <!-- Scripts JS  -->
+    <script src="js/js_p4/form.js"></script>
+    <script type="text/javascript" src="js/js_p4/main.js"></script>
+    <link rel="stylesheet" href="css/style_pg_4.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="global">
+        <header>
+            <!-- creamos clase clearfix para borrar flotantes que quedan en la imagen de pantalla  -->
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Contactos</a></li>
+                    <li><a href="#">Informacion</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h3>Curso programacion web</h3>
+            <p class="parrafo">Hola, <strong>Bienvenidos</strong>, a este curso de programacion web.
+                <i>Esto es un texto en italica. </i><b>Esto es un texto en negrita. </b><q>Esto es un texto 
+                entre comillas, hace referencia a una cita.</q><br><br>
+                <strong>Nota: </strong> Por favor, verificar el codigo de la plataforma web.
+            </p>
+            <div id='pestanas'>
+                <ul>
+                    <li><a href="#tabs-1">Pestaña 1</a></li>
+                    <li><a href="#tabs-2">Pestaña 2</a></li>
+                    <li><a href="#tabs-3">Pestaña 3</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <img src="img/png.jpg" title="Loro" width="200px" height="200px" alt="Imagen de un loro">
+                </div>
+                <div id="tabs-2">
+                    <p class="parrafo">Hola, <strong>Bienvenidos</strong>, a este curso de programacion web.
+                        <i>Esto es un texto en italica. </i><b>Esto es un texto en negrita. </b><q>Esto es un texto 
+                        entre comillas, hace referencia a una cita.</q><br><br>
+                        <strong>Nota: </strong> Por favor, verificar el codigo de la plataforma web.
+                    </p>
+                </div>
+                <div id="tabs-3">
+                    <!-- Vamos a construir una tabla  -->
+                    <table>
+                        <caption>Titulo de la tabla</caption>
+                        <colgroup>
+                            <col span="2" style="background-color:red">
+                            <col style="background-color:cornflowerblue">
+                          </colgroup>
+    
+                        <thead>
+                            <tr>
+                                <th>Columna 1</th>
+                                <th>Columna 2</th>
+                                <th>Columna 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Celda 1</td>
+                                <td>Celda 2</td>
+                                <td>Celda 3</td>
+                            </tr>
+                            <tr>
+                                <td>Celda 4</td>
+                                <td>Celda 5</td>
+                                <td>Celda 6</td>
+                            </tr>
+                            <tr>
+                                <td>Celda 7</td>
+                                <td>Celda 8</td>
+                                <td>Celda 9</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Tabla 1.</td>
+                                <td>Informacion</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <!-- La <colgroup>etiqueta especifica un grupo de una o más columnas en una tabla 
+                para formatear.
+                La <colgroup>etiqueta es útil para aplicar estilos a columnas enteras, en lugar 
+                de repetir los estilos para cada celda, para cada fila.
+                
+                Nota: La <colgroup>etiqueta debe ser hija de un elemento <table>, después de 
+                cualquier elemento <caption> y antes de cualquier elemento <thead>, <tbody>, 
+                <tfoot> y <tr>.
+                
+                Sugerencia: Para definir diferentes propiedades a una columna dentro de a <colgroup>,
+                use la etiqueta <col> dentro de la <colgroup>etiqueta. -->
+            <table style="margin: 0px auto;">
+                <colgroup>
+                    <col style="background-color:yellow">
+                    <col style="background-color:cadetblue">
+                    <col style="background-color:coral">
+            </colgroup>
+                <tr>
+                    <th>ISBN</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>3476896</td>
+                    <td>My first HTML</td>
+                    <td>$53</td>
+                </tr>
+                <tr>
+                    <td>5869207</td>
+                    <td>My first CSS</td>
+                    <td>$49</td>
+                </tr>
+            </table>
+            <!-- <div class="box"> -->
+            <div>
+                <form action="#" class="action" method="POST" id="formulario" onsubmit="return false">
+                    <label for="name">Nombre
+                        <input type="text" name="name" id="name">
+                    </label>
+                    <span  id="error_nombre"></span>
+
+                    <label for="lastname">Apellidos
+                        <input type="text" name="lastname" id="lastname">
+                    </label>
+
+                    <label for="age">Edad
+                        <input type="number" name="age" id="age">
+                    </label>
+
+                    <label for="">Password
+                        <input type="password" name="" id="">
+                    </label>
+
+                    <p>Seleccione su lenguaje de programacion favorito</p>
+                        <label for="HTML">HTML</label>
+                        <input type="radio" name="fav_lenguaje" id="HTML" value="HTML">
+                        <label for="HTML">PHP</label>
+                        <input type="radio" name="fav_lenguaje" id="PHP" value="PHP">
+                        <label for="HTML">JS</label>
+                        <input type="radio" name="fav_lenguaje" id="JS" value="PHP">
+                       
+                    <p></label>Seleccione tu edad</p>
+                        <input type="radio" name="age" id="age1" value="30">
+                        <label for="age1">0-30</label><br>
+                        <input type="radio" name="age" id="age2" value="60">
+                        <label for="age2">31-60</label><br>
+                        <input type="radio" name="age" id="age3" value="100">
+                        <label for="age3">61-100</label>
+                    
+                    <p>Seleccione las mascotas que desea tener</p>
+                        <input type="checkbox" name="mascota1" id="mascota1" value="perro">
+                        <label for="mascota1">Un perro</label><br>
+                        <input type="checkbox" name="mascota2" id="mascota2" value="gato">
+                        <label for="mascota2">Un gato</label><br>
+                        <input type="checkbox" name="mascota3" id="mascota3" value="loro">
+                        <label for="mascota3">Un loro</label><br>
+                        
+                    <label for="sex">Sexo</label>
+                            <!-- required hace que el campo sea obligatorio llenar o escoger  -->
+                             <select name="sex" data-validation="required">  
+                                <option value="hombre">Hombre</option>
+                                <option value="mujer">Mujer</option>
+                             </select>
+                       
+                    <label for="">Imagen
+                            <input type="file" name="imagen" id="">
+                    </label>
+
+                    <input type="submit" value="Enviar formulario">
+                    <input type="reset" value="Resetear formulario">
+                </form>
+            </div>
+            <div class="box dashed">
+                <h2>Informacion de contacto</h2>
+                <p id="p_name">
+                    <strong>Nombre:</strong><span></span>
+                </p>
+                <p id="p_lastname">
+                  <strong>Apellidos:</strong><span></span>
+                </p>
+                <p id="p_edad">
+                  <strong>Edad:</strong><span></span>
+                </p>
+            </div>     
+                         
+        </main>
+    </section>
+    
+    <footer>
+        Curso de programacion web
+        <a href="#" class="subir">subir</a>
+    </footer>
+
+</body>
+</html>

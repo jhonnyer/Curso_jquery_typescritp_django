@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primero se incluye el script de javascript  -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <!-- Incluir Jquery ui  -->
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+     <!-- Estilos CSS JQuery UI permite incluir funciones como redimensionar, selectable, etc -->
+     <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css"></LINk>
+     <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.css"></LINk>
+     <LINk rel="StyleSheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.css"></LINk>
+    <!-- importar los estilos css de mi documento  -->
+    <!-- Vamos a importar el archivo js que hemos creado con el accordion  -->
+    <script src="js/asesoria.js"></script>
+    <link rel="stylesheet" href="css/asesoria2.1.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- contener todos los elementos de mi pagina web  -->
+    <section id="global">
+        <header>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="http://www.youtube.com">Youtube</a></li>   
+                    <li><a href="#">Informacion</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- seccion que va a contener el contenido de mi pagina web, es decir la informacion  -->
+        <section>
+            <div id="box">
+                <h2>Datos sobre mi</h2>
+                <div id="acordeon">
+                    <h3>Quienes somos</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis feugiat gravida. In lacinia ac nunc in porta.</p>
+                    </div>
+                    <h3>Nuestros servicios</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis feugiat gravida. In lacinia ac nunc in porta.</p>
+                    </div>
+                    <h3>Contactos</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis feugiat gravida. In lacinia ac nunc in porta.</p>
+                    </div>
+                </div>
+            </div>
+            <aside id="sidebar">
+                <div>
+                    <h4><span>Datos de contacto</span></h4>
+                    <img src="img/minion.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis feugiat gravida. In lacinia ac nunc in porta.</p>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+    </section>
+    <!-- Asignar el pie de pagina de mi plataforma web  -->
+    <footer>
+        Curso de programacion web <a href="#" class="subir">Subir</a>
+    </footer>
+</body>
+</html>

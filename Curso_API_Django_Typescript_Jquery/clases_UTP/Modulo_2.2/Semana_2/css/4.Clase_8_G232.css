@@ -1,0 +1,120 @@
+body{
+    background: seashell;
+}
+
+
+/* estilos del menú de navegacion  */
+.nav-enlace{
+    display: inline-block;
+    background: salmon;
+    color: #FFF;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.nav-enlace:hover{
+    background: rosybrown;
+    /* color: black; */
+}
+
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+    /* flex-direction: row-reverse; */
+}
+
+.title{
+    color: red;
+    font-size: 4rem;
+}
+
+
+@media (min-width:550px){
+    .display_pequeno{
+        display: block;
+        background: saddlebrown;
+    }
+}
+
+
+@media all and (max-width:600px){
+    .facet_sidebar{
+        display: none;
+    }
+
+    nav{
+        background:lightslategray;
+        flex-direction: column;
+    }
+
+    .nav-enlace{
+        margin: 5px;
+        line-height: 1.5;
+    }
+
+    .title{
+        font-size: 30px;
+        text-align: center;
+        color: blue;
+    }
+
+    h2{
+        font-size: 25px;
+        text-align: left;
+    }
+
+    p{
+        line-height: 1.5;
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    body{
+        background: skyblue;
+    }
+}
+
+
+@media print{
+    body{
+        color: blue;
+    }
+
+    .title{
+        color: red;
+    }
+}
+
+
+/* estilos de media query dependiendo el ancho del navegador, 
+landscape: La ventana grafica tener una orientación horizontal, esto quiere decir que el ancho es mayor que altura */
+@media (orientation:landscape) and (max-width:500px){
+    .title{
+        color: green;
+    }
+} 
+
+
+/* Tiupo de orientacion vertical 
+portrait: En este caso la ventana tiene una orientacion vertica, es decir que la altura es mayor o igual que la anchura */
+
+@media (orientation:portrait){
+    .title{
+        color: chocolate;
+    }
+    
+    select{
+        display: none;
+    }
+
+    h2{
+        color: blueviolet;
+    }
+
+    body{
+        background: sandybrown
+    }
+}

@@ -1,0 +1,61 @@
+/* Etiqueta = 1
+Clases y pseudo clases = 10
+ID = 100
+Estilos en línea = 1000
+!important = sobre escribe cualquiera anterior */
+/* Hace referencia al estilo de un ID que tiene un peso de 100  */
+#parrafo{
+    color: blueviolet;
+}
+
+/* El estilo que hace referencia a una clase, tiene  un peso de 10 */
+.parrafo{
+    color: red;
+}
+
+/* Vamos a probar la herencia, mediante inherit de la etiqueta a en una etiqueta p  */
+a{
+    color: inherit;
+}
+
+/* modifica estilo a una etiqueta y tiene un peso de 1  */
+/* Una etiqueta tiene un peso de 1  */
+p{
+    color: green;
+}
+
+
+/* !important sobreescribir sobre cualquier clase anterio  */
+/* p{
+    color: darkblue !important;
+} */
+
+.parrafo-2{
+    color: purple;
+}
+
+/* #MEtododologia BEM  */
+.button{
+    display: inline-block;
+    border-radius: 3px;
+    padding: 7px 12 px;
+    border: 1px solid #D5D5D5;
+    background-image: linear-gradient(#EEE,#DDD);
+    font: 700 13px/18px Helvetica, arial;
+}
+
+.button--state-sucess{
+    color: FFF;
+    background: #569e3D linear-gradient(#79D858, #569E3D) repeat-x;
+    border-color: #569e3D;
+}
+
+.button--state--danger{
+    color: #900;
+}
+
+h1{
+    padding: 10px;
+    padding-top: 50px;
+    padding-left: 100px;
+}

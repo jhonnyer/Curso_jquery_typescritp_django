@@ -1,0 +1,213 @@
+/*
+    Ordenar elementos con grid-column y grid-row
+    grid-column-start: establece desde que column-line empezará el elemento
+    grid-column-end: establece hasta que column-line llega el elemento
+    grid-row-start: establece desde que row-line empezará el elemento
+    grid-row-end: establece hasta que row-line llega el elemento
+    Existe un shorthand que engloba las 2 propiedades
+    grid-column: start / end
+    grid-row: start / end
+    tanto start como end admiten valores positivos, negativos y la palabra span
+    Valor positivo: Empieza a contar las column-lines o las row-lines de izquierda a derecha
+    Valor negativo: Empieza a contar las column-lines o las row-lines de derecha a izquierda
+    span: establecemos cuantas columnas o filas ha de ocupar, span 3 es como decirle que ocupe 3 columnas
+    tip: Si ponemos en el valor end -1 llegará hasta el final
+*/
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    color: #eee;
+    font-family: sans-serif;
+    background-image: radial-gradient(circle, #b94bf8, #3a1957);
+    background-repeat: no-repeat;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+}
+
+.grid-item {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.hijo_A{
+    background: violet;
+}
+
+.hijo_B{
+    background: violet;
+}
+.hijo_C{
+    background: orange;
+}
+.hijo_D{
+    background: orange;
+    grid-column-start: 1;
+    grid-row-start: 1;
+   
+}
+.hijo_E{
+    background: violet;
+}
+.hijo_F{
+    background: violet;
+}
+.hijo_G{
+    background: violet;
+}
+.hijo_H{
+    background: violet;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.hijo_I{
+    background:red;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-column-end: 5;
+    grid-row-end: 3;
+}
+
+
+
+/* GRID TEMPLATE AREA  */
+.grid-container1{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    /* definir areas nombrando zonas de nuestra cuadricula  */
+    grid-template-areas: 
+    "hijoA hijoA hijoA hijoA"
+    "hijoB . . hijoC"
+    "hijoB hijoD hijoD hijoE"
+    "hijoF hijoH hijoG hijoI";
+}
+
+.grid-item {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.hijo_Aa{
+    background: violet;
+    grid-area: hijoA;
+}
+
+.hijo_Bb{
+    background: violet;
+    grid-area: hijoB;
+}
+
+.hijo_Cc{
+    background: orange;
+    grid-area: hijoC;
+}
+
+.hijo_Dd{
+    background: orange;
+    grid-area: hijoD;
+}
+
+.hijo_Ee{
+    background: violet;
+    grid-area: hijoE;
+}
+
+.hijo_Ff{
+    background: violet;
+    grid-area: hijoF;
+}
+
+.hijo_Gg{
+    background: violet;
+    grid-area: hijoG;
+}
+
+.hijo_Hh{
+    background: violet;
+    grid-area: hijoH;
+}
+
+.hijo_Ii{
+    background: red;
+    grid-area: hijoI;
+}
+
+
+/* contenidos textos  */
+.prices {
+    display: flex;
+    align-items: flex-start;
+    min-height: 600px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+
+.prices__item {
+    width: 50%;
+    min-width: 300px;
+    height: 300px;
+}
+
+/* Seleccione y aplique estilo a cada elemento <p> que sea el primer hijo de su padre: */
+.prices__item:first-child {
+    background: peru;
+}
+
+/* Especifique un color de fondo para cada elemento <p> que sea el segundo hijo de su padre */
+.prices__item:nth-child(2) {
+    background: green;
+    line-height: 20px;
+    align-self: center;
+}
+
+.prices__item:nth-child(3) {
+    background: indianred;
+    line-height: 15px;
+}
+
+.prices__item:nth-child(4) {
+    background: lightgreen;
+    line-height: 50px;
+} 
+
+
+.flex-container3  {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FCA17D;
+    height: 400px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+     
+ }
+ .flex-item3 {
+    margin: auto; /* truco, si a un itens dentro de un contenedor flexible le colocas margin auto, lo centras tanto verticar como orizontalmente*/
+    width: 90px;
+    height: 50px;
+    color: aliceblue;
+    background-color: #9A348E;
+    text-align: center;
+    line-height: 50px;
+ }
+ 

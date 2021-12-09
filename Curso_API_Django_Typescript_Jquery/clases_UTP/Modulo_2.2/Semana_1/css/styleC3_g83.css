@@ -1,0 +1,172 @@
+/* como estamos colocando estilos a una clase, utilizamos un punto seguido  */
+/* del nombre de la clase */
+
+.ligero{
+    font-weight: lighter;
+    color: #FF3802;
+}
+
+.normal{
+    font-weight: normal;
+    color: rgb(255, 56, 2 );
+}
+
+.negrita{
+    font-weight: bold;
+    color: hsl(13, 99%, 50%);
+}
+
+.pesado{
+    font-weight: bolder;
+}
+
+
+.font_100{
+    font-weight: 100;
+    color: red;
+}
+
+.font_400{
+    font-weight: 400;
+    color: blue;
+}
+.font_600{
+    font-weight: 600;
+    color: green;
+}
+.font_900{
+    font-weight: 900;
+}
+
+.cont1{
+    background-color: aquamarine;
+}
+
+.normal{
+    font-variant: normal;
+}
+
+.small{
+    font-variant: small-caps;
+}
+
+.amarillo{
+    color: yellow;
+    background-color: brown;
+    /* interlineado al texto */
+    line-height: 1.5;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.cont2{
+    background-color: chocolate;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.left{
+    text-align: left;
+    font-weight: bold;
+}
+
+.right{
+    text-align: right;
+}
+
+.center{
+    text-align: center;
+    font-weight: bold;
+}
+
+.justificada{
+    text-align: justify;
+}
+
+.resp{
+    font-weight: bold;
+    text-align: left;
+}
+
+/* estilos de mi tabla  */
+.tabla{
+    height: 200px;
+}
+
+.top{
+    vertical-align: top;
+}
+
+.mid{
+    vertical-align: middle;
+}
+
+.bot{
+    vertical-align: bottom;
+}
+
+/* texto alineados con indices y superindices  */
+.baseline{
+    vertical-align: baseline;
+}
+
+.sub{
+    vertical-align: sub;
+}
+
+.super{
+    vertical-align: super;
+}
+
+.pixeles{
+    vertical-align: -30px;
+}
+
+.bloque{
+    height: 200px;
+    width: 500px;
+    background-color: red;
+    display: inline-table;
+}
+
+.texto{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+/* Estilos de css sin decoracion y con decoracion  */
+.none{
+    text-decoration: none;
+}
+
+.inherit{
+    text-decoration: inherit;
+}
+
+.overline{
+    text-decoration: overline;
+}
+
+.through{
+    text-decoration: line-through;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.enlace{
+    text-decoration: none;
+}
+
+.som_pos{
+    text-shadow: 7px 6px 5px blue;
+    font-size: 25px;
+}
+
+.som_neg{
+    text-shadow: -7px -6px 6px brown;
+    font-size: 25px;
+}

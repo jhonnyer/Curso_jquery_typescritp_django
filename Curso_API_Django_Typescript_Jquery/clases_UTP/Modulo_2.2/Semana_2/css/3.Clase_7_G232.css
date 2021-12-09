@@ -1,0 +1,231 @@
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 100vh;
+    color: #FFF;
+    font-family: sans-serif;
+    background-image: radial-gradient(circle, #B94BF8, #3A1957 );
+    background-repeat: no-repeat;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+}
+
+
+.grid-item{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+/* Configruar los elementos de las clases hijo  */
+
+/* .hijo_A{
+    background: violet;
+} */
+
+/* .hijo_B{
+    background: violet;
+} */
+
+.hijo_C{
+    background: orange;
+}
+
+.hijo_D{
+    background: orange;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+/* .hijo_E{
+    background: violet;
+} */
+
+.hijo_A,
+.hijo_E,
+.hijo_B,
+.hijo_F,
+.hijo_G{
+    background: violet;
+}
+
+
+
+.hijo_H{
+    background: violet;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.hijo_I{
+    background: red;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+
+/* grid template area  */
+.grid-container1{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-template-areas: 
+    "hijoA hijoA hijoA hijoA"
+    "hijoB . . hijoC"
+    "hijoB hijoD hijoD hijoE"
+    "hijoF hijoH hijoG hijoI";
+}
+
+
+/* configuramos los elementos hijos del contenedor1 */
+
+.hijo_Aa{
+    background: violet;
+    grid-area: hijoA;
+}
+
+.hijo_Bb{
+    background: violet;
+    grid-area: hijoB;
+}
+
+.hijo_Cc{
+    background: orange;
+    grid-area: hijoC;
+}
+
+.hijo_Dd{
+    background: orange;
+    grid-area: hijoD;
+}
+
+.hijo_Ee{
+    background: violet;
+    grid-area: hijoE;
+}
+
+.hijo_Ff{
+    background: violet;
+    grid-area: hijoF;
+}
+
+.hijo_Gg{
+    background: violet;
+    grid-area: hijoG;
+}
+
+.hijo_Hh{
+    background: violet;
+    grid-area: hijoH;
+}
+
+.hijo_Ii{
+    background: red;
+    grid-area: hijoI;
+}
+
+/* contenedor de textos  */
+.prices{
+    display: flex;
+    align-items: flex-start;
+    min-height: 600px;
+    border: 1px solid black;
+    /* Esta propiedad permite que mi aplicacion sea responsive  */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.prices-items{
+    width:40%;
+    min-width: 300px;
+    height: 300px;
+    padding: 5px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.prices-items:first-child{
+    background: peru;
+}
+
+.prices-items:nth-child(2){
+    background: green;
+}
+
+.prices-items:nth-child(3){
+    background: indianred;
+}
+
+.prices-items:nth-child(4){
+    background: lightskyblue;
+}
+
+p{
+    padding: 5px;
+}
+
+h2{
+    padding: 5px;
+}
+
+.prices-title{
+    color: red;
+}
+
+.cont1{
+    border: 1px solid black;
+    width: 500px;
+    height: 100px;
+    float: right;
+    /* margin: 50px auto; */
+    /* float: left; */
+}
+
+nav{
+    background: #B94BF8;
+    line-height: 1.5;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+nav a{
+    display: flex;
+    justify-content: center
+}
+
+#menu{
+    width: 50%;
+    float: left;
+    background: #FF5C29;
+    margin: 10px;
+    height: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu ul{
+    line-height: 46px;
+    list-style: none;
+    padding: 20px;
+}
+
+
+#menu a{
+    text-decoration: none;
+}

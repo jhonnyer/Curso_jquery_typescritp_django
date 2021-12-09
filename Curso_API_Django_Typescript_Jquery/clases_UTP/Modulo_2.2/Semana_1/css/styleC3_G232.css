@@ -1,0 +1,173 @@
+.ligero{
+    font-weight: lighter;
+}
+
+.normal{
+    font-weight: normal;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.pesado{
+    font-weight: bolder;
+}
+
+.normal_400{
+    font-weight:400;
+}
+
+.bold_600{
+    font-weight: 600;
+}
+
+
+/* Etilos font_variant  */
+#font_1{
+    font-variant: normal;
+}
+
+#font_2{
+    font-variant:small-caps ;
+}
+
+
+/* estilos de color  */
+.rgb_azul{
+    color: rgb(0, 85, 255) ;
+}
+
+.hsl_azul{
+    color:hsl(220, 100%, 50%)
+}
+
+/* p{
+    font-weight: bold;
+} */
+
+.cont{
+    background-color: blue;
+}
+
+.articulo{
+    color: yellow;
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: justify;
+    padding: 20px;
+}
+
+/* estilos de clase alineacion  */
+.left{
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.right{
+    text-align: right;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.center{
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+
+.justify{
+    text-align: justify;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.topo{
+    vertical-align: top;
+}
+
+.mido{
+    vertical-align: middle;
+}
+
+.boto{
+    vertical-align: bottom;
+}
+
+.tablas{
+    border: 1px solid black;
+    border-color: black;
+    height: 200px;
+}
+
+
+/* Alineacion de texto en superindice, subindices o sobre la linea  */
+.baseline{
+    vertical-align: baseline;
+}
+
+.sub{
+    vertical-align: sub;
+}
+
+.super{
+    vertical-align: super;
+}
+
+.pixeles{
+    vertical-align: -30px;
+}
+
+.bloque{
+    height: 200px;
+    width: 300px;
+    margin: 1px auto;
+    background-color: brown;
+    color: white;
+    display: inline-table;
+}
+
+.texto{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+/* estilos de texto con y sin decoracion  */
+.none{
+    text-decoration: none;
+}
+
+.inherit{
+    text-decoration: inherit;
+}
+
+.overline{
+    text-decoration: overline;
+}
+
+.through{
+    text-decoration: line-through;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.text_dec{
+    text-decoration: none;
+}
+
+/* estilos de textos con sombra  */
+.som_pos{
+    text-shadow: 7px 4px 5px blue;
+}
+
+
+.som_neg{
+    text-shadow: -7px -4px 5px blue;
+}

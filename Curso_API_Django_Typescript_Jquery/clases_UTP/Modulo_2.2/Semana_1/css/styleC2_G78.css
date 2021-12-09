@@ -1,0 +1,140 @@
+body{
+    font-family: Arial;
+    font-size: 18px;
+}
+
+/* Como contenido es una clase, debemos colocar inicialmente un punto seguido del nombre de la clase  */
+.contenido{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#a52a2a;
+    padding: 20px;
+    color: white;
+    line-height: 1.5;
+    font-size: 80%;
+    width: 80%;
+}   
+
+.texto1{
+    /* Esto me permte colocar el texto en negrita */
+    font-weight: bold;
+    /* este comando me permite colocar el texto en italica o cursiva  */
+    font-style: italic;
+}
+
+/* PAra dar estilos a un id, es necesario colocar el simbolo de numeral # seguido del nombre del id  */
+#texto2{
+    font-variant: small-caps;
+}
+
+/* Esto es un texto es minuscula  */
+#texto3{
+    text-transform: lowercase;
+}
+
+/* Esto es un texto en mayuscula  */
+#texto4{
+    text-transform: uppercase;
+}
+
+/* Esto es un texto con capitalize */
+#texto5{
+    text-transform: capitalize;
+}
+
+/* Tipos de alineaciones de los textos  */
+.center{
+    text-align: center;
+    background-color: lightskyblue;
+    /* vamos a colcoar un interlineado  */
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.izquierda{
+    text-align: left;
+    background-color: lightskyblue;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.derecha{
+    text-align: right;
+    background-color: lightskyblue;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.justify{
+    text-align: justify;
+    background-color: lightskyblue;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+/* tpios de letras  */
+.cursiva{
+    font-family: cursive;
+}
+
+.georgia{
+    font-family: Georgia;
+}
+
+.fantasia{
+    font-family: fantasy;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.monospace{
+    font-family: monospace;
+}
+
+/* COnfigurar estilos para tamaños de texto mediante una palabra clave valor  */
+.mpeq{
+    font-size:x-small;
+}
+
+.peq{
+    font-size: small;
+}
+
+.peq_1{
+    font-size: smaller;
+}
+
+.med{
+    font-size: medium;
+}
+
+.lar{
+    font-size: large;
+}
+
+.mlar{
+    font-size: x-large;
+}
+
+.mmlar{
+    font-size: xx-large;
+}
+
+/* Tamaños de texto h1 y h2 iguales con la propiedad font-size */
+h1{
+    font-size: 32px;
+}
+h2{
+    font-size: 2em;
+}
+
+/* EStilos de texto normal, italica y oblicua  */
+.normal{
+    font-style: normal;
+}
+
+.italica{
+    font-style: italic;
+}
+
+.oblicua{
+    font-style: oblique;
+}

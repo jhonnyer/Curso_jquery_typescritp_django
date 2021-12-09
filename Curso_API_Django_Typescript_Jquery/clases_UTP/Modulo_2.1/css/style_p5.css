@@ -1,0 +1,91 @@
+/* Selector universal  */
+*{
+    background-color: beige;
+}
+
+/* Selectores basicos  de etiquetas */
+p{
+    color: red;
+}
+
+h1{
+    font-size: 60px;
+}
+
+/* Selectores de clase  */
+.title{
+    color:blue
+}
+
+.text{
+    font-size: 12px;
+}
+
+/* selectores de id  */
+#text_2{
+    color: orange;
+    font-size: 20px;
+}
+
+/* Tipos de selectores universales  */
+/* Selector de atributos  */
+[href]{
+    color: green;
+}
+
+[href='facebook']{
+    color: blue;
+}
+
+/* atributo que tenga el valor al menos una vez */
+[class~='title']{
+    color: blue;
+}
+
+/* Atributo que tenga exactamente el valor indicado o inicie con el valor con guion  */
+[class|='text']{
+    color: blueviolet;
+}
+
+[class^='title1']{
+    font-size:60px;
+}
+
+/* Atributo que finalice con el valor indicado  */
+[class $='text']{
+    font-size: 23px;
+}
+
+/* atributo que contenga el valor  */
+[class *='title1']{
+    color: chocolate;
+}
+
+
+/* selectores combinadores de hermano adyacente.  selecciona a un hermano justo debajo*/
+h3 + h4{
+    color:brown;
+}
+
+/* Selector combinado de hermano general buscar todos los hermanos que compartan el mismo padre */
+h1~h3{
+    color: darkmagenta;
+}
+
+/* selector combinado descendente, aplica el estilo a todos los elementos que sean hijos  */
+div span{
+    color: indigo;
+}
+
+/* Selector de hijo directo, se aplica al hijo directo del elemento seleccionado, el hijo directo es el que esta en el nivel 1 descendente */
+p>span{
+    color: green;
+}
+
+/* Herencia (inherit), se obliga a un elemento a heredar la propiedad de su elemento cercano  */
+/* p{
+    color: black;
+} */
+a{
+    color: inherit;
+}

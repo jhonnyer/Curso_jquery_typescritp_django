@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Boton</h1>
+    <button type="button" onclick="alert('Has dado click en el boton')">Presiona click</button>
+    <h2>Imagen</h2>
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <img src="img/png.jpg" width="500px" height="500px" alt="Imagen de prueba 1">
+            <img src="https://www.cleverfiles.com/howto/wp-content/uploads/2018/03/minion.jpg" width="500px" height="500px">
+    </div>
+
+    <!-- listas  -->
+    <h4>Lista ordenada</h4>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ol>
+    <h4>lista desordenada</h4>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+
+    <h4>Input</h4>
+    <h5>Input numerico</h5>
+    <input type="number" name="" id="">
+    <h5>Input texto</h5>
+    <input type="text" name="" id="">
+    <h5>Input radio button</h5>
+    <input type="radio" name="radio" id="">
+    <input type="radio" name="radio" id="">
+    <h5>Input button checkbox</h5>
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">
+    <br>
+    <div style="background-color: aquamarine;">
+        <h2 title="Titulo del div">Texto de prueba</h2>
+        <p id="parrafo1">Hola mundo, <strong>Bienvenidos</strong>, este curso es de programacion. <u>Tenemos un texto subrayado.</u>
+            La siguiente etiqueta <i>coloca texto en italica.</i>La siguiente añade un link, <a href="http://www.youtube.com" target="_blank" accesskey='t'>Link de youtube.</a>
+            La etiqueta coloca <q>texto entre comillas</q> y un texto en <b>negrita</b>. Se usa un salto de linea. <br>Con el
+            fin de coloca un formato de fecha del año <time>2021</time>.
+        </p>
+        <br>
+        <p><strong>Nota: </strong> La tecla de acceso rapido se ejecuta con la tecla alt+Tecla</p>
+        <!-- Internet Explorer: [Alt] + accesskey
+        Chrome: [Alt] + accesskey
+        Firefox: [Alt] + [Shift] + accesskey
+        Safari: [Alt] + accesskey
+        Opera: [Alt] + accesskey -->
+    </div>
+
+    <!-- Eventos mouse js -->
+    <h2>Eventos mouse</h2>
+    <button id="boton" onclick="alert('Boton presionado')">Presionar</button>
+                <!-- Evento de una funcion cambiarColor con un click -->
+    <!-- <button id="boton" onclick="cambiarColor();">Presionar</button> -->
+                <!-- Evento de una funcion cambiar color presionando doble click  -->
+    <button id="boton" ondblclick="cambiarColor();">Presionar</button>
+                <!-- Evento utilizando el capturador EvenList, elimina codigo spaguetti  -->
+    <button id="start">Iniciar parpadeo</button>
+    <button id="stop">Parar parpadeo</button>
+    <button id="boton">Presioname</button>
+    <br>
+    <div>Este es un evento de raton</div>
+    <hr>
+    
+    <!-- Eventos de teclado  -->
+    <h2>Eventos por teclado</h2>
+    <!-- Eventos  script 6.evento_teclado.js por teclado      -->
+    <form action="">
+        <label for="">Nombre</label>
+        <input type="text" name="nombre" id="campo_nombre"/> 
+    </form>
+    </p>
+
+    <section id="miseccion">
+        <h1 id="encabezado">Listado textos de los DIVs</h1>
+        <!-- <hr> -->
+    </section>
+
+    <!-- Archivos js  -->
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/2.Eventos_mouse.js"></script>
+    <script type="text/javascript" src="js/3.Eventos_teclado.js"></script>
+</body>
+</html>

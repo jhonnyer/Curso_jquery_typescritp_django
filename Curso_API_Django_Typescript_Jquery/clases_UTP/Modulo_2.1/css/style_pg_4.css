@@ -1,0 +1,103 @@
+#menu{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#3477B6;
+    width: 100%;
+    text-transform: uppercase; /*Texto en mayuscula*/
+    margin-bottom: 20px;
+}
+
+
+#menu ul{
+    line-height: 46px;
+    list-style: none; /*A la lista quitar los puntos que aparecen*/
+}
+
+#menu ul li{
+    height: 50px;
+    /* quiero colocar el menu horizontal debo utilizar el atributo display:inset-block: ; */
+    display: inline-block;
+    transition: all 300ms;/*Permite que haya una transiccion sobre el link del menu*/
+}
+
+#menu a{
+    display: block;
+    color:black;
+    /* text-decoration: none; me quita el subrayado del enlace   */
+    text-decoration: none; 
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* #Footer  */
+/* Si queremos modificar una etiqueta, solamente basta con colocar el nombre de la etiqueta */
+footer{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    height: 47px;
+    background-color: #3477B6;
+    margin: 0px auto; /*con el atributo margin centramos el footer en la pagina web*/
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top:20px;
+    line-height: 47px;
+}
+
+.subir{
+    color:black;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
+/* box del formulario  */
+/* Div Box vista about.html */
+.box{
+    width: 250px;
+    height: 250px;
+    /* float: left; */
+    margin: 20px;
+}
+.dashed{
+    border: 3px dashed black;
+    /* separa los bordes  */
+    padding: 5px;
+}
+
+
+/* Estilos del formulario  */
+/* Estilos del formulario para la web . Van a tener el mismo estilo todas las entradas */
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"],
+form input[type="file"],
+/* form input[type="radio"], */
+select{
+    padding:5px;
+    border-radius: 1px;
+    border:1px solid #ccc;
+    width: 100%;
+    margin-bottom: 10px;
+    /* box-shadow:  0px 0px 2px gray; Amplitud de la sombra del input */
+    margin-top: 5px;
+}
+
+form input[type="submit"],
+form input[type="reset"]{
+    background: rgb(19, 196, 57);
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: rgb(14, 13, 13);
+    cursor: pointer;
+}
+
+/* Estilo mensaje informativo de error de validacion de formulario */
+/* #error_nombre{
+    float: left;
+    font-size: 11px;
+    background: red;
+    color: white;
+    padding: 10px;
+    width: 65%;
+} */

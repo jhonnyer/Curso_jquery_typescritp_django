@@ -1,0 +1,164 @@
+/* estilos al menu de navegacion  */
+.nav-enlace{
+    display: inline-block;
+    background: salmon;
+    color: #FFF;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+
+.nav-enlace:hover{
+    background: rosybrown;
+}
+
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+    display: flex;
+    /* justify-content: space-around; */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: right; */
+    /* justify-content: left; */
+    justify-content: space-between;
+}
+
+
+.contenedor{
+    width: 80%;
+    height: 500px;
+    background: #FF5C29;
+    margin: 50px auto;
+    /* agrupar los elementos uno despues de otro de forma horizontal  */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-content: flex-end; */
+    /* align-content: flex-start; */
+    align-items: center;
+}
+
+.hijo{
+    background: yellowgreen;
+    margin: 30px auto;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: black;
+}
+
+
+.contenedor1{
+    width: 80%;
+    height: 500px;
+    background: #FF5C29;
+    margin: 50px auto;
+    /* agrupar los elementos uno despues de otro de forma horizontal  */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-content: flex-end; */
+    /* align-content: flex-start; */
+    align-items: center;
+}
+
+.hijo1{
+    background: yellowgreen;
+    margin: 30px auto;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: black;
+    /* flex-grow: 1; */
+    /* flex-grow: 0;
+    flex-shrink: 0; */
+    flex: 0 1 auto;
+    align-self: flex-start;
+    /* order: 1; */
+}
+
+
+.otro1{
+    order: 4;
+    align-self: flex-start;
+}
+
+
+.otro2{
+    order: 1;
+    align-self: flex-end;
+}
+
+
+
+.otro3{
+    order: 3;
+    align-self: center;
+}
+
+
+.otro4{
+    order: 2;
+    flex: 0 1 auto;
+    /* posicionar un bloque en una parte especifica donde nosotros queramos
+    El ajuste se realiza de forma vertical */
+    /* align-self:flex-end; */
+    align-self: stretch;
+    /* align-self: center; */
+    height: auto;
+}
+
+
+/* container flex container estilos  */
+.flex-container{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FCA17D;
+    height: 400px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.flex-container a{
+    text-decoration: none;
+    display: block;
+}
+
+.flex-item{
+    margin: 15px;
+    width: 80px;
+    height: 50px;
+    color: black;
+    background: lawngreen;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* modificar los estilos de la clase box que es una caja  */
+.box{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border: 1px solid black;
+    width: 100%;
+    height: 19%;
+    display: flex;
+    align-items: center;
+}
+
+.box img{
+    max-width: 50%;
+}

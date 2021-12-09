@@ -1,0 +1,106 @@
+body{
+    background-color:blueviolet ;
+}
+
+.contenedor{
+    background-color: #abbcff;
+    padding: 20px;
+}
+
+p{
+    padding: 20px;
+}
+
+.morado{
+    background-color: purple;
+}
+
+.verde{
+    background-color: #009846;
+}
+
+.naranja{
+    background-color: rgb(239,127,26);
+}
+
+.c_hex{
+    background-color: #6E2C00;
+}
+
+.c_rgb{
+    background-color: rgb(110, 44, 0 );
+}
+
+.c_hsl{
+    background-color: hsl(24, 100%, 22%);
+}
+
+.fondoimg{
+    max-width: 500px;
+    min-height: 350px;
+    background-image: url('../img/minions.jpg'),url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgfNfmjd8ZthLLSFsVStn8GY4uIn_Mnisvuw&usqp=CAU');
+    background-repeat: repeat-x;
+    /* background-repeat: repeat-y; */
+    /* background-repeat: no-repeat; */
+}
+
+.texto{
+    background-color: orange;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8WSaiPbVz519u1N3QxvmZJCUw-Z0T80SuCQ&usqp=CAU');
+    /* background-image: inherit; */
+    background-repeat: inherit;
+    border: 2px solid red;
+    width: 400px;
+    height:200px;
+}
+
+
+.movil{
+    background-image: url('../img/minion.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 500px;
+    height: 500px;
+}
+
+.fijo{
+    background-image: url('../img/minion.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 500px;
+    height:900px;
+}
+
+.cont1{
+    background-color: bisque;
+}
+
+.cont2{
+    background-color: burlywood;
+}
+
+
+.elemento{
+    /* funcion calc */
+    /* width: calc(200px + 1em); */
+    /* width: calc(200px + 1vw); */
+    /* funcion min  */
+    /* width: min(200px, 25%); */
+    /* funcion max  */
+    /* 1vw es un valor relativo al tamaño de la ventana del navegador  */
+    /* viewport : el tamaño de la ventana del navegador, si la ventana
+    tiene un tamaño de 50 cm, 1 vw va a ser equivalente a 0.5cm */
+    width:  max(100px, 25%, 14vw);
+    height: 200px;
+    background-color: aquamarine;
+}
+
+.cont3{
+    background-color: cornflowerblue;
+}
+
+.element::before{
+    content: attr(data-autor);
+    font-size: 22px;
+    color: black;
+}

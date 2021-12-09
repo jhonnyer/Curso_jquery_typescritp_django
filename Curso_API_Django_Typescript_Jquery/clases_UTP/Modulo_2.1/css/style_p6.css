@@ -1,0 +1,140 @@
+/* Clase * son estilos que se van a aplicar a todos los elementos  */
+*{
+    margin:3px;
+    padding:0px;
+    /* list-style:none; */
+}
+
+.clearfix{
+    float:none;
+    /* both limpia los flotadores  */
+    clear:both;
+}
+
+
+/* id es con #, clase con .  
+El id global abarca la cabecera header y el body. Coloca sus elementos centrados en este caso*/
+#global{
+    width:65%;
+    margin:0px auto;
+    margin-top:10px;
+    padding: 25px;
+    background:white;
+    box-shadow: 0px 0px 2px gray; /*Sombra de la seccion global en gris*/
+}
+
+/* Cuando se pasa el cursos por el li del menu hace un efecto de seleccion de color verde definido en este caso */
+#menu ul li:hover{
+    background: #b3e0a7;
+}
+
+
+body {
+    /* imagen de fondo de pantalla 
+    ..permite salir del directorio css y luego ir a la carpeta img */
+    background:url('../img/hojas.jpg');
+    /* imagen se muestre en todo el fondo de la pagina  */
+    background-attachment: fixed;
+    /* background:red; */
+}
+
+#menu{
+    font-family: Helvetica, Arial;
+    background:#333;
+    width:100%;
+    text-transform: uppercase;/*Texto en mayuscula*/
+    margin-bottom: 20px;
+}
+
+/* ingresa al id:menu, luego al ul */
+#menu ul{
+    /* margen en la parte superior de la linea  */
+    line-height: 46px;
+    list-style:none;
+}
+
+#menu ul li{
+    height: 46px;
+    /* inline block permite ubicar el menu en horizontal uno despues de otro  */
+    display: inline-block;
+    transition: all 300ms;/*Permite que haya una transiccion sobre el link del menu*/
+}
+
+/* Cuando se pasa el cursos por el li del menu hace un efecto de seleccion de color verde definido en este caso */
+/* #menu ul li:hover{
+    background: #235E3D;
+} */
+
+#menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* aside  */
+#sidebar{
+    font-family: Helvetica, Arial;
+    width: 31%;
+    float: right;
+}
+
+#sidebar h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+    background: url("../img/minion.jpg") repeat-x; /*Repite el patron de lineas sobre el h4*/
+}
+
+
+#sidebar h4 span{
+    background: white;
+    padding: 5px;
+}
+
+#sidebar img{
+    width: 100%;
+}
+
+#sidebar p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+/* Div Box vista about.html */
+#box{
+    width:60%;
+    float:left;
+    margin-top:40px;
+}
+
+/* Acordeon  */
+#acordeon{
+    margin-top: 20px;
+}
+
+/* maquetear el footer  */
+footer{
+    font-family: Helvetica, Arial;
+    color: white;
+    height: 47px;
+    background: rgb(51, 51, 51, 0.7); /*Color trasnparente con opacidad 0,70 */
+    margin: 0px auto;
+    width: 65%; /*Ancho*/
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 47px;
+}
+
+/* Estilos Boton de subir la ventana a la parte superior  */
+.subir{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+

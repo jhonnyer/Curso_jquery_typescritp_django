@@ -1,0 +1,38 @@
+body{
+    font-family: Arial;
+    font-size: 80%;
+}
+.contenido{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: blue;
+    font-size: 20px;
+}
+
+.mayus{
+    /* #Convertir texto en mayuscula sin sobrepasar la altura de una minuscula  */
+    font-variant: small-caps;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.capt{
+    text-transform: capitalize;
+}
+
+.text-allign{
+    text-align: left;
+}
+
+p{
+    line-height: 1.5;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Tipos de parrafos  */
+p.cursiv{
+    font-family: cursive;
+}

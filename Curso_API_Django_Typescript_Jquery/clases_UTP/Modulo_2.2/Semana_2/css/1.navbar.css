@@ -1,0 +1,78 @@
+.nav-enlace{
+    background: salmon;
+    color: #FFF;
+    padding: 10px 30px;
+    /* Convertimos en un bloque, en este caso vertical  */
+    display: block;
+    /* Utilizamos display: inline-block para colocar el 
+    menu horizontal y separar la parte superior de la pagina
+    para que tenga una mejor distribucion  */
+    display: inline-block;
+}
+
+/* hover enlaces  */
+.nav-enlace:hover{
+    background: rosybrown;
+}
+
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+}
+
+.hijo{
+    background: greenyellow;
+    padding: 20px;
+    margin: 10px;
+    width: 20px;
+    color: black;
+    /* height: 20px; */
+}
+
+
+/* Menu con un contenedor y Flexbox */
+.contenedor{
+    width: 80%;
+    height: 500px;
+    background: #FF5C29;
+    margin: 50px auto;
+    /* Agrupa los elementos uno despues de otro de forma horizontal  */
+    display: flex;
+    flex-direction: row;
+    /* Se mueve la caja al lado derecho comenzando con la caja a  */
+    /* flex-direction: row-reverse; */
+
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    
+    /* flex-wrap hace respetar el ancho de los bloques  */
+    flex-wrap: wrap;
+    
+    /* organiza los bloques posicionandolos al inicio del contenedor  */
+    /* justify-content: flex-start; */
+    /* Organiza los bloques al lado derecho manteniendo su orden  */
+    /* justify-content: flex-end; */
+
+    /* bloques ubicados en el centro del contenedor  */
+    justify-content: center;
+
+    /* propiedad space-between se tiene los bloques con mayor espacio entre ellos 
+    y alineados en todo el eje del contenedor */
+    /* justify-content: space-between; */
+
+    /* Modifica el espacio entre los bloques de forma aleatoria  */
+    /* justify-content: space-around; */
+
+    /* align items permite posicionar los bloques hijo al top o final del contenedor
+    si se escribe center se posiciona en el centro del contenedor */
+
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items:baseline; */
+
+    /* Permite crear alternativas para los bloques hijos relacionada con la altura,
+    permitiendo que flex los modifique  */
+    align-items: stretch;
+}
+
